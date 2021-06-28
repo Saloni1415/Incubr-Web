@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "incubr"
+  "defaultProject": "incubr",
+  "cli": {
+    "analytics": "0e8599e6-e6b2-4b19-a9b2-4893a6816d6d"
+  }
 }
