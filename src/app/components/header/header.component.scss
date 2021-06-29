@@ -1,0 +1,15 @@
+.header-title{
+    font-family: Dosis-Bold;
+    color: #020025;
+    opacity: 1;
+    font-size: 58.33px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-title{
+        font-size: 35.33px;
+    }
+    .ham{
+        width: 37px;
+    }
+  }

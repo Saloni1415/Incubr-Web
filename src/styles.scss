@@ -1,2 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+    font-family: "Dosis";
+    src: local("Dosis"), url(./assets/fonts/Dosis/Dosis-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Dosis-Bold";
+    src: local("Dosis-Bold"), url(./assets/fonts/Dosis/static/Dosis-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "BrownStdBold";
+    src: local("BrownStdBold"), url(./assets/fonts/brownstd-cufonfonts/BrownStdBold.otf) format("truetype");
+}
+@font-face {
+    font-family: "BrownStdLight";
+    src: local("BrownStdLight"), url(./assets/fonts/brownstd-cufonfonts/BrownStdLight.otf) format("truetype");
+}
+@font-face {
+    font-family: "As";
+    src: local("As"), url(./assets/fonts/AuthenticSignature.ttf) format("truetype");
+}

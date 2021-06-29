@@ -1,0 +1,81 @@
+.footer{
+    background: #020025 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 20px;
+}
+
+.footer .link{
+    font-family: BrownStdLight;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-left: 30px;
+
+}
+
+.subtext{
+    font-size: 13px;
+    margin-left: 30px;
+    font-family: BrownStdLight;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.header-title{
+    font-family: Dosis-Bold;
+    color: #020025;
+    opacity: 1;
+    font-size: 58.33px;
+}
+
+.contact_links{
+    text-align: left;
+    text-decoration: underline;
+    letter-spacing: 0px;
+    color: #020025;
+    opacity: 1;
+}
+
+.btn_gs{
+    border: 1px solid #000000;
+    border-radius: 13px;
+    opacity: 1;
+    padding: 10px 30px;
+}
+
+.footer_text{
+    font-family: BrownStdBold;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #020025;
+    opacity: 1;
+    width: 580px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-title{
+        font-size: 35.33px;
+    }
+    .footer .link{
+        font-size: 15px !important;
+        margin-left: 8px;
+    }
+    .subtext{
+        margin-left: 8px;
+    }
+    .footer{
+        padding: 8px;
+    }
+    .footer_text{
+        padding: 10px;
+        font-size: 30px;
+    }
+    .footer_icon{
+        height: 25px;
+        width: 25px;
+    }
+  }
