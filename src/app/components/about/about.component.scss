@@ -1,0 +1,22 @@
+.title{
+    font-family: BrownStdBold;
+    text-shadow: -1px 1px 0 #020025,
+    1px 1px 0 #020025,
+    1px -1px 0 #020025,
+    -1px -1px 0 #020025;
+    color: white;
+    font-size: 100px;
+    line-height: initial;
+}
+
+.text{
+    font-family: BrownStdRegular;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 768px) {
+    .title{
+        font-size: 50px;
+        line-height: 3px;
+    }
+}

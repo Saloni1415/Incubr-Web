@@ -1,0 +1,40 @@
+.title{
+    font-family: BrownStdBold;
+    text-shadow: -1px 1px 0 #020025,
+    1px 1px 0 #020025,
+    1px -1px 0 #020025,
+    -1px -1px 0 #020025;
+    color: white;
+    font-size: 100px;
+    line-height: initial;
+}
+
+.card{
+    border: 2px solid #000000;
+    overflow: hidden;
+    border-radius: 11px;
+    max-width: 270px;
+}
+
+.card_img{
+    height: 293px;
+    width: 100%;
+}
+
+.anchor{
+    font-family: BrownStdRegular;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .card{
+        margin: auto !important;
+        margin-top: 20px !important;
+    }
+    .title{
+        font-size: 50px;
+        line-height: 3px;
+    }
+}
