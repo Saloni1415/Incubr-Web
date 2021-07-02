@@ -7,8 +7,12 @@
     color: white;
     font-size: 100px;
     line-height: initial;
+    transition: 0.5s;
 }
 
+.title:hover{
+    color: #020025;
+}
 .card{
     border: 2px solid #000000;
     overflow: hidden;

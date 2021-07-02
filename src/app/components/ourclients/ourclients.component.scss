@@ -7,60 +7,23 @@
     margin: 16px auto;
 }
 
+ol li{
+    border: black 1.1px solid;
+}
+
+ol{
+    margin: auto !important;
+}
+
 :host ::ng-deep{
     .image-container {
         // max-width: 85%;
+        padding-bottom: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-    .igx-carousel {
-        max-width: 100%;
-        width: unset;
-    }
-
-    .igx-nav-dot {
-        background: black;
-        box-shadow: none;
-        width: 15px;
-        height: 15px;
-    }
-
-    .igx-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        width: unset;
-        height: max-content;
-        bottom: auto !important;
-        height: auto !important;
-    }
-    .igx-carousel__arrow--prev{
-        display: none;
-    }
-    .igx-carousel__arrow--next{
-        display: none;
-    }
-
-    .igx-slide img {
-        object-fit: fill;
-        max-width: 90%;
-    }
-
-    @media screen and (max-width: 600px) {
-        .igx-carousel__inner {
-            min-height: 420px !important;
-        }
-    }
-
 }
-
-
-
-
-
 
 
 
@@ -77,7 +40,12 @@
     1px 1px 0 #020025,
     1px -1px 0 #020025,
     -1px -1px 0 #020025;
+    transition: 0.5s;
     color: white;
+}
+
+.ourclients .title:hover{
+    color: #020025;
 }
 
 .ourclients .subtitle{

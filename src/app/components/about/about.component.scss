@@ -7,8 +7,11 @@
     color: white;
     font-size: 100px;
     line-height: initial;
+    transition: 0.5s;
 }
-
+.title:hover{
+    color: #020025;
+}
 .text{
     font-family: BrownStdRegular;
     font-size: 19px;

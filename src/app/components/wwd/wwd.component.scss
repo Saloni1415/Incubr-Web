@@ -7,7 +7,12 @@
     1px 1px 0 #020025,
     1px -1px 0 #020025,
     -1px -1px 0 #020025;
+    transition: 0.5s;
     color: white;
+}
+
+.wwdtext:hover{
+    color: #020025;
 }
 
 .wwdsubtext{

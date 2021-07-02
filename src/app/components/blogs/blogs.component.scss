@@ -7,8 +7,11 @@
     color: white;
     font-size: 100px;
     line-height: initial;
+    transition: 0.5s;
 }
-
+.title:hover{
+    color: #020025;
+}
 .card_title{
     font-family: BrownStdBold;
     font-size: 30px;

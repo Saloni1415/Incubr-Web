@@ -3,7 +3,6 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { IgxCarouselModule, IgxSliderModule } from "igniteui-angular";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -30,10 +29,8 @@ import { AboutComponent } from './components/about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IgxCarouselModule,
     FormsModule,
     BrowserAnimationsModule,
-    IgxSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
