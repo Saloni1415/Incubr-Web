@@ -1,0 +1,43 @@
+.detail_text{
+    font-size: 35px;
+    line-height: 46px;
+    color: #020025;
+    font-weight: 300;
+    font-family: "BrownStdBold";
+}
+.detail_subtext{
+    line-height: 30px;
+    color: #020025;
+    font-weight: 300;
+    font-family: "BrownStdBold";
+    font-size: 28px;
+}
+
+.card_{
+    border: 2px solid #000000;
+    overflow: hidden;
+    border-radius: 11px;
+}
+
+.card_title{
+    font-family: BrownStdBold;
+    font-size: 23px;
+    text-align: left;
+}
+.card_subtitle{
+    font-family: BrownStdRegular;
+    font-size: 17px;
+    color: black;
+    text-align: left;
+}
+.keepreading{
+    font-family: BrownStdRegular;
+    font-size: 27px;
+    color: black;
+    text-align: left;
+}
+
+.imagefull{
+    border-radius: 10px;
+    height: 450px;
+}

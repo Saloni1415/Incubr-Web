@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,8 +14,8 @@ import { OurclientsComponent } from './components/ourclients/ourclients.componen
 import { OurworksComponent } from './components/ourworks/ourworks.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { AboutComponent } from './components/about/about.component';
-import { LogolistComponent } from './pages/logolist/logolist.component';
-
+import { LogolistComponent } from './pages/Bloglist/logolist.component';
+import { BlogdetailComponent } from './pages/blogdetail/blogdetail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,10 +27,12 @@ import { LogolistComponent } from './pages/logolist/logolist.component';
     OurworksComponent,
     BlogsComponent,
     AboutComponent,
-    LogolistComponent
+    LogolistComponent,
+    BlogdetailComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,

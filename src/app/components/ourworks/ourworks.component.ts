@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from 'src/app/data.service';
 @Component({
   selector: 'app-ourworks',
   templateUrl: './ourworks.component.html',
@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurworksComponent implements OnInit {
 
-  constructor() { }
+  constructor(public data:DataService) { }
 
-  ngOnInit(): void {
+  async ngOnInit(){
   }
 
 }
