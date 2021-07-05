@@ -9,6 +9,12 @@ export class LandingComponent implements OnInit {
   constructor() { }
 
   async ngOnInit() {
+    let Fontsize = 97
+    let Strokewidth = "2px"
+    if(window.innerWidth<600){
+      Fontsize = 45
+      Strokewidth = '1px'
+    }
     this.instance = new SVGTextAnimate("../../../assets/fonts/AuthenticSignature.ttf",{
       "duration": 300,
       "delay": 150,
@@ -18,8 +24,8 @@ export class LandingComponent implements OnInit {
       "mode": "delay"
     },{
       "stroke": "#020025",
-      "stroke-width": "2px",
-      "font-size": 97
+      "stroke-width": Strokewidth,
+      "font-size": Fontsize
     });
     await this.instance.setFont();
     this.instance.create(" grow fast with us", "#demo");

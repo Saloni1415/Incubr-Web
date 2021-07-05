@@ -1,4 +1,5 @@
 .title{
+    margin-left: 50px;
     font-family: BrownStdBold;
     text-shadow: -1px 1px 0 #020025,
     1px 1px 0 #020025,
@@ -8,11 +9,35 @@
     font-size: 100px;
     line-height: initial;
     transition: 0.5s;
+    display: inline-block;
+    position: relative;
 }
 
 .title:hover{
     color: #020025;
 }
+.title::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #020025;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.title:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.margin__card{
+    margin: 0px 100px;
+}
+
 .card{
     border: 2px solid #000000;
     overflow: hidden;

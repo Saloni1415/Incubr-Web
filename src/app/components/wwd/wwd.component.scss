@@ -1,5 +1,7 @@
 .wwdtext{
     font-family: BrownStdBold;
+    display: inline-block;
+    position: relative;
     font-size: 100px;
     text-align: center;
     line-height: initial;
@@ -14,6 +16,26 @@
 .wwdtext:hover{
     color: #020025;
 }
+.wwdtext::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #020025;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.wwdtext:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.margin__card{
+    margin: 0px 100px;
+}
 
 .wwdsubtext{
     width: 600px;
@@ -25,7 +47,7 @@
 
 .card{
     border: 2px solid #000000;
-    border-radius: 31px;
+    border-radius: 11px;
     padding: 20px;
     max-width: 270px;
 }
