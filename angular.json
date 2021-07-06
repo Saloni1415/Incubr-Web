@@ -28,15 +28,15 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.scss"
             ],
             "scripts": [ 
               "./node_modules/hammerjs/hammer.min.js",
-              "svg-text-animate-master/dist/svg-text-animate.min.js",
-              "src/_redirects"
+              "svg-text-animate-master/dist/svg-text-animate.min.js"
             ]
           },
           "configurations": {
@@ -95,15 +95,15 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.scss"
             ],
             "scripts": [ 
               "./node_modules/hammerjs/hammer.min.js",
-              "svg-text-animate-master/dist/svg-text-animate.min.js",
-              "src/_redirects"
+              "svg-text-animate-master/dist/svg-text-animate.min.js"
             ]
           }
         },
