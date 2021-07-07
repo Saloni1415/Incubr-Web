@@ -1,43 +1,19 @@
 <div class="container">
     <div class="m-md-5 m-1 "></div>
     <div class="detail_text mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+        {{blogdetail.title}}
     </div>
 
-    <img class="w-100 imagefull mt-5"
-        src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
-        alt="">
+    <img class="w-100 imagefull mt-5" src="{{(blogdetail.images?.length>0)?blogdetail.images[0]?.image:''}}" alt="">
 
     <hr class="mt-5">
 
-    <div class="card_subtitle mt-3">June-25-2021</div>
+    <div class="card_subtitle mt-3">{{blogdetail.created_at | date}}</div>
 
-    <div class="detail_subtext mt-5">
+    <!-- <div class="detail_subtext mt-5">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
     </div>
-
-    <div class="card_subtitle mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    </div>
-    <div class="card_subtitle mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    </div>
-
-    <img class="w-100 imagefull mt-5"
-        src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
-        alt="">
 
     <div class="card_subtitle mt-5">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -54,7 +30,29 @@
         magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    </div> -->
+    <div class="mt-5" [innerHtml]="blogdetail.description_1"></div>
+
+    <img class="w-100 imagefull mt-5" src="{{(blogdetail.images?.length>1)?blogdetail.images[1]?.image:''}}" alt="">
+
+    <!-- <div class="card_subtitle mt-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
     </div>
+    <div class="card_subtitle mt-5">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    </div> -->
+    <div class="mt-5" [innerHtml]="blogdetail.description_1"></div>
+
     <hr class="mt-5">
 
     <div class="keepreading mt-5">
@@ -62,33 +60,22 @@
     </div>
 
     <div class="row mt-5">
-        <div class="col">
+        <div class="col" *ngFor="let item of blogslist">
             <div class="card_">
                 <div>
-                    <img src="./assets/images/blog1.png" alt="" width="100%" height="280px">
+                    <img src="{{(item.images.length>0)?item.images[0]?.image:''}}" alt="" width="100%" height="280px">
                 </div>
                 <div class="p-1 p-md-3">
                     <div class="card_title text-center">
-                        Title 1
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card_">
-                <div>
-                    <img src="./assets/images/blog1.png" alt="" width="100%" height="280px">
-                </div>
-                <div class="p-1 p-md-3">
-                    <div class="card_title text-center">
-                        Title 1
+                        {{item.title}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="text-end mt-4" style="text-decoration: underline;font-size: 20px;">more blogs ></div>
+    <div class="text-end mt-4" style="text-decoration: underline;font-size: 20px;cursor: pointer;" routerLink="/blog">
+        more blogs ></div>
 
     <div class="m-5"></div>
 </div>
