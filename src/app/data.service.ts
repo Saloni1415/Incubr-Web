@@ -4,7 +4,16 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
   providedIn: 'root'
 })
 export class DataService {
+  headerOpen:boolean=false
   blogslist :any= []
+  toggleHeader(){
+    this.headerOpen = !this.headerOpen
+    if(this.headerOpen){
+      document.getElementsByTagName('body')[0].style.overflow='hidden'
+    }else{
+      document.getElementsByTagName('body')[0].style.overflow='auto'
+    }
+  }
   constructor(public http:HttpClient) {
     this.getBlogs()
   }
@@ -16,4 +25,5 @@ export class DataService {
   public async getBlog(id:any){
     return await this.http.get(`http://143.110.180.129/blog/api/blog/${id}/`).toPromise();
   }
+
 }

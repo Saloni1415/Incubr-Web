@@ -1,8 +1,37 @@
 <div class="d-flex justify-content-between px-5 py-4">
     <div>
         <div class="d-flex align-items-center h-100">
-            <img src="./assets/images/hamburger.png" alt="" class="ham" srcset="">
+            <div class="iconcont">
+
+                <!-- <div class="example"> -->
+                    <button class="nav-toggle" (click)="data.toggleHeader()">
+                      <span class="nav-toggle__text">Toggle Menu</span>
+                    </button>
+                <!-- </div> -->
+
+                <!-- <img (click)="data.toggleHeader()" src="./assets/images/hamburger.png" alt="" class="ham" srcset=""> -->
+            </div>
         </div>
+
+        <ng-container *ngIf="data.headerOpen">
+            <div class="position-fixed header_container">
+                <div class="d-flex justify-content-between">
+                    <div></div>
+                    <div class="header_item_container">
+                        <ng-container *ngFor="let item of header">
+                            <div  class="header_item text-end" (click)="data.toggleHeader();toggleNavIcon()">
+                                <p style="display: inline;" [routerLink]="item.url">
+                                    {{item.name}}
+                                </p>
+                                <span></span>
+                            </div>
+                            <div class="divi"></div>
+                            <div class="m-1 m-md-5 "></div>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
     </div>
     <div class="header-title" routerLink="/" style="cursor: pointer;">
         incubr

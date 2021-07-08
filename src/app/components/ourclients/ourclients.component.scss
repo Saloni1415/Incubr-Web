@@ -1,20 +1,15 @@
-
 // FOR CAROUSEL
-
 .carousel-container {
     width: 70vw;
     height: 80vh;
     margin: 16px auto;
 }
-
 ol li{
     border: black 1.1px solid;
 }
-
 ol{
     margin: auto !important;
 }
-
 :host ::ng-deep{
     .image-container {
         // max-width: 85%;
@@ -24,14 +19,7 @@ ol{
         justify-content: center;
     }
 }
-
-
-
-
-
 ///CLIENTSS
-
-
 .ourclients .title{
     position: relative;
     margin-left: 50px;
@@ -66,10 +54,6 @@ ol{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-
-
-
 .ourclients .subtitle{
     font-family: BrownStdBold;
     line-height: initial;
@@ -77,7 +61,6 @@ ol{
     text-align: center;
     color: #020025;
 }
-
 .ourclients .wrap{
     padding:20px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -85,7 +68,6 @@ ol{
     border-radius: 13px;
     opacity: 1;
 }
-
 .ourclients .text{
  font-family: BrownStdLight;
  font-size: 20px;
@@ -104,19 +86,14 @@ ol{
 .ourclients .ml__{
     margin-left: 630px;
 }
-
 @media screen and (max-width: 600px) {
-
     .ourclients .title{
         font-size: 50px;
         line-height: 3px;
     }
-
     .ourclients .subtitle{
         font-size: 30px;
     }
-
-
     .ourclients .text{
         font-size: 15px;
     }
@@ -126,20 +103,13 @@ ol{
     .ourclients .subname{
         font-size: 16px;
     }
-
 }
-
 @media screen and (max-width: 930px) {
     .ourclients .ml__{
         margin-left: auto;
     }
 }
-
-
-
 // ------------------------------------------------------------------
-
-
 .carousel-showsixmoveone
 {
   .carousel-control
@@ -157,7 +127,6 @@ ol{
       margin-right:15px;
     }
   }
-
   .cloneditem-1, 
   .cloneditem-2, 
   .cloneditem-3,
@@ -221,7 +190,6 @@ ol{
         display: block;
       }
     }
-
     @media all and (min-width: 992px)
     {    
       @media (transform-3d), (-webkit-transform-3d)
@@ -248,7 +216,6 @@ ol{
           left: 0;
         }
       }
-
       > .active.left,
       > .prev
       {
@@ -277,8 +244,6 @@ ol{
     }    
   }
 }
-
-
 // demo setup only, not needed for carousel
 .container
 {
@@ -309,7 +274,6 @@ h2
     float: left;
   }
 }
-
 .title
 {
   padding: 28px;
