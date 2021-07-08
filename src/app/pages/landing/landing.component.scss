@@ -12,7 +12,6 @@
     -1px -1px 0 #7CD5FA;
 }
 .hello_anim{
-
     transition: 2s;
     animation: fadein 2s linear;
 }
@@ -104,5 +103,11 @@
 }
 
 
-
-
+.subtitle{
+    font-family: BrownStdBold;
+    line-height: initial;
+    font-size: 35px;
+    text-align: center;
+    color: #020025;
+    max-width: 70%;
+}

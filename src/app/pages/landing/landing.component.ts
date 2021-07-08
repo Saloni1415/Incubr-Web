@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,ViewChild,ElementRef} from '@angular/core';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
   instance:any ;
+  //@ts-ignore
+  @ViewChild('Topvideo') Topvideo:ElementRef;
+  //@ts-ignore
+  @ViewChild('Footervideo') Footervideo:ElementRef;
   constructor() { }
 
   async ngOnInit() {
@@ -36,6 +40,14 @@ export class LandingComponent implements OnInit {
       g.style.transition = '3s'
       g.style.fill = '#020025'
     },3000)
+
+
   }
 
+  ngAfterViewInit(){
+    this.Topvideo.nativeElement.muted = true 
+    this.Topvideo.nativeElement.play()
+    this.Footervideo.nativeElement.muted = true 
+    this.Footervideo.nativeElement.play()
+  }
 }
