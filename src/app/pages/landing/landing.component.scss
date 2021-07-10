@@ -77,7 +77,13 @@
     color: white;
 }
 
-
+.simple{
+    text-shadow: -1px 1px 0 #020025,
+    1px 1px 0 #020025,
+    1px -1px 0 #020025,
+    -1px -1px 0 #020025 !important;
+    color: white !important;
+}
 @media screen and (max-width: 600px) {
     .hello {
         font-size: 100px;
@@ -106,8 +112,11 @@
 .subtitle{
     font-family: BrownStdBold;
     line-height: initial;
-    font-size: 35px;
+    font-size: 58px;
     text-align: center;
     color: #020025;
-    max-width: 70%;
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+    // max-width: 90%;
 }

@@ -2,7 +2,7 @@
     font-family: BrownStdBold;
     display: inline-block;
     position: relative;
-    font-size: 100px;
+    font-size: 120px;
     text-align: center;
     line-height: initial;
     text-shadow: -1px 1px 0 #020025,
@@ -56,11 +56,12 @@
     padding-top: 20px;
     font-family: BrownStdBold;
     font-size: 30px;
-    text-shadow: -1px 1px 0 #020025,
-    1px 1px 0 #020025,
-    1px -1px 0 #020025,
-    -1px -1px 0 #020025;
-    color: white;
+    color: #020025;
+    // text-shadow: -1px 1px 0 #020025,
+    // 1px 1px 0 #020025,
+    // 1px -1px 0 #020025,
+    // -1px -1px 0 #020025;
+    // color: white;
     text-align: center;
 }
 
@@ -70,6 +71,7 @@
     color: #02002E;
     margin-top: 40px;
     min-height: 170px;
+    text-align: center;
 }
 
 .card_button{

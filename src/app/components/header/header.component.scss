@@ -26,7 +26,7 @@
 
 .header_item{
     font-family: BrownStdBold;
-    font-size: 75.33px;
+    font-size: 79.33px;
     color: white;
     text-shadow: -1px 1px 0 #020025,
     1px 1px 0 #020025,
@@ -80,13 +80,14 @@
     // width: 440px;
 }
 .divi{
-    height: 3px;
+    margin-top: 15px 12px;
+    height: 1px;
     width: 100%;
     background-color: #020025;
 }
 
 .iconcont{
-    padding: 6px;
+    padding: 10px 6px;
     border: black 1.2px solid;
     border-radius: 50%;
 }
@@ -97,10 +98,10 @@ $menu-icon-color: #000;
 
 // Navigation Toggle Button
 .nav-toggle {
-  display: block;
-  padding: 17px 12px;
+  // display: block;
+  // padding: 17px 12px;
   width: 18px;
-  height: 2px;
+  height: 0px;
   border: 0;
   box-sizing: content-box;
   background-clip: content-box;
@@ -116,18 +117,19 @@ $menu-icon-color: #000;
     position: relative;
     content: '';
     display: block;
-    width: 18px;
+    // width: 12px;
     height: 2px;
     background-color: $menu-icon-color;
     transition: transform 500ms ease-in-out;
   }
 
   &:before {
-    top: -6px;
+    top: -4px;
+    // left: -4px;
   }
 
   &:after {
-    bottom: -4px;
+    bottom: -1px;
   }
 
   &__text {
