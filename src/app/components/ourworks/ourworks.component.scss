@@ -1,7 +1,4 @@
 .title{
-    margin-left: 100px;
-    margin-right: 100px;
-    // margin-left: 50px;
     font-family: BrownStdBold;
     text-shadow: -1px 1px 0 #020025,
     1px 1px 0 #020025,
@@ -9,7 +6,7 @@
     -1px -1px 0 #020025;
     color: white;
     font-size: 120px;
-    line-height: initial;
+    line-height: 100px;
     transition: 0.5s;
     display: inline-block;
     position: relative;
@@ -57,8 +54,6 @@
     font-size: 15px;
     text-decoration: underline;
     font-weight: bold;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 @media screen and (max-width: 768px) {

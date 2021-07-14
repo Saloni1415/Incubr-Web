@@ -20,9 +20,8 @@ ol{
     }
 }
 ///CLIENTSS
-.ourclients .title{
+ .title{
     position: relative;
-    margin-left: 50px;
     display: inline-block;
     font-family: BrownStdBold;
     line-height: initial;
@@ -35,13 +34,13 @@ ol{
     color: white;
 }
 
-.ourclients .title:hover{
+ .title:hover{
     color: #020025;
 }
-.ourclients .title::after{
+ .title::after{
     content: '';
     position: absolute;
-    width: 110%;
+    width: 100%;
     transform: scaleX(0);
     height: 4px;
     bottom: 0;
@@ -50,62 +49,62 @@ ol{
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
-.ourclients .title:hover::after {
+ .title:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-.ourclients .subtitle{
+ .subtitle{
     font-family: BrownStdBold;
     line-height: initial;
     font-size: 35px;
     text-align: center;
     color: #020025;
 }
-.ourclients .wrap{
+ .wrap{
     padding:20px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 9px 16px #15151557;
     border-radius: 13px;
     opacity: 1;
 }
-.ourclients .text{
- font-family: BrownStdLight;
- font-size: 20px;
- max-width: 600px;
+ .text{
+  font-family: BrownStdLight;
+  font-size: 20px;
+  max-width: 600px;
 }
-.ourclients .name{
+ .name{
     font-family: BrownStdRegular;
     font-size: 20px;
     color: #020025;
 }
-.ourclients .subname{
+ .subname{
     font-family: BrownStdLight;
     font-size: 16px;
     color: #020025;
 }
-.ourclients .ml__{
+ .ml__{
     margin-left: 630px;
 }
 @media screen and (max-width: 600px) {
-    .ourclients .title{
+     .title{
         font-size: 50px;
         line-height: 3px;
     }
-    .ourclients .subtitle{
+     .subtitle{
         font-size: 30px;
     }
-    .ourclients .text{
+     .text{
         font-size: 15px;
     }
-    .ourclients .name{
+     .name{
         font-size: 20px;
     }
-    .ourclients .subname{
+     .subname{
         font-size: 16px;
     }
 }
 @media screen and (max-width: 930px) {
-    .ourclients .ml__{
+     .ml__{
         margin-left: auto;
     }
 }
@@ -276,9 +275,8 @@ h2
 }
 .title
 {
-  padding: 28px;
-  display: table-cell;
-  position: relative;
-  vertical-align: middle;
-  text-align: center;
+  // display: table-cell;
+  // position: relative;
+  // vertical-align: middle;
+  // text-align: center;
 }

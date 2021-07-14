@@ -1,47 +1,56 @@
 
 <!-- POST HEADER SECTION -->
-<div class="d-flex justify-content-center mt-3 hello_container">
-    <video preload="true" width="100%" height="100%" autoplay loop muted #Topvideo>
-        <source src="../../../assets/videos/landing_page_video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <!-- CHANGED HELLO SECTION -->
-    <!-- <div class="hello position-relative d-flex justify-content-center">
-        <div class="position-absolute hello-sub p-3" style="text-align: center;margin: auto;">
-            we leverage technology and creativity with a great brand story to help you grow super fast. as simple as
-            that.
-        </div>
-        <span class="hello_anim">
-            hello
-        </span>
-    </div> -->
+<div class="vertical_container">
+    <div class="d-flex justify-content-center mt-3 hello_container">
+        <video preload="true" width="100%" height="100%" autoplay loop muted #Topvideo>
+            <source src="../../../assets/videos/landing_page_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- CHANGED HELLO SECTION -->
+        <!-- <div class="hello position-relative d-flex justify-content-center">
+            <div class="position-absolute hello-sub p-3" style="text-align: center;margin: auto;">
+                we leverage technology and creativity with a great brand story to help you grow super fast. as simple as
+                that.
+            </div>
+            <span class="hello_anim">
+                hello
+            </span>
+        </div> -->
+    </div>
 </div>
+
 <!-- CHANGED ANIM TEXT SECTION -->
 <!-- <div class="d-flex justify-content-center mt-1">
     <div class="grow">
         <div id="demo" style="transition: 2s;"></div>
     </div>
 </div> -->
-<div style="height: 150px;"></div>
-<div class="d-flex justify-content-center">
-    <div class="subtitle mt-5 mt-md-5">
-        "We leverage <span class="text-underline" style="text-decoration: underline;"> technology</span> and <span class="text-underline" style="text-decoration: underline;"> creativity</span> with a great <span class="text-underline" style="text-decoration: underline;">brand story</span>   to help you accelerate your growth."
+<div style="height: 120px;"></div>
+<div class="vertical_container">
+    <div class="d-flex justify-content-center">
+        <div class="subtitle">
+            "We leverage technology and creativity with a great brand story to help you accelerate your growth."
+        </div>
     </div>
 </div>
-<div style="height: 58px;"></div>
-<!-- <span class="subtitle simple ">Simple!</span>  -->
 
-<div style="height: 150px;"></div>
-<app-wwd></app-wwd>
-<app-ourworks></app-ourworks>
-<app-ourclients></app-ourclients>
+<div style="height: 120px;"></div>
+<div class="vertical_container">
+    <app-wwd></app-wwd>
+</div>
+<div style="height: 120px;"></div>
+<div class="vertical_container">
+    <app-ourworks></app-ourworks>
+</div>
+<div style="height: 120px;"></div>
+<div class="vertical_container">
+    <app-ourclients></app-ourclients>
+</div>
+<div style="height: 120px;"></div>
  
 
 <!-- OURPROMISE SECTION -->
-<!-- <div class="m-2 p-0 p-md-5 m-md-5"></div> -->
-<hr>
-<!-- <div class="m-2 p-0 p-md-5 m-md-5"></div> -->
-<div class="d-flex justify-content-center pt-4">
+<!-- <div class="d-flex justify-content-center pt-4">
     <div class="d-flex BrownStd-Bold grid_text p-0 p-md-5 mb-4">
         <div style="border-right: 3px solid #020025;">
             <div class="d-flex h-100 align-items-center" style="max-width: min-content;">
@@ -57,24 +66,25 @@
         </div>
     </div>
 </div>
-<div style="height: 150px;"></div>
-<!-- <div class="m-2 p-0 p-md-5 m-md-5"></div> -->
-<hr>
-
-<div class="p-5"></div>
-<app-blogs></app-blogs>
-<app-about></app-about>
-
-<!-- IMAGE AND VIDEO BEFORE FOOTER SECTION -->
-<div>
-    <img class="w-100" src="./assets/images/boy.png" style="box-shadow: 0px 9px 16px #15151557;" alt="" srcset="">
-</div>
+<div style="height: 120px;"></div>
+<hr> -->
 <div>
     <video preload="true" width="100%"  autoplay loop muted #Footervideo>
         <source src="../../../assets/videos/incubr_website_video_final.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
-<div style="height: 150px;"></div>
+<div style="height: 120px;"></div>
+<div class="vertical_container">
+    <app-blogs></app-blogs>
+</div>
+<div style="height: 120px;"></div>
+<!-- <app-about></app-about> -->
+
+<!-- IMAGE AND VIDEO BEFORE FOOTER SECTION -->
+<div>
+    <img class="w-100" src="./assets/images/boy.png" style="box-shadow: 0px 9px 16px #15151557;" alt="" srcset="">
+</div>
+<div style="height: 120px;"></div>
 <!-- FOOTER -->
 <app-footer></app-footer>

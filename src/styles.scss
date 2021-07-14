@@ -36,3 +36,19 @@
     font-family: "As";
     src: local("As"), url(./assets/fonts/AuthenticSignature.ttf) format("truetype");
 }
+
+
+.vertical_container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+@media screen and (max-width: 600px) {
+    .vertical_container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.DosisLight{
+    font-family: Dosis;
+}

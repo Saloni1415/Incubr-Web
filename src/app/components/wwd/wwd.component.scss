@@ -4,6 +4,20 @@
     position: relative;
     font-size: 120px;
     text-align: center;
+    line-height: 100px;
+    text-shadow: -1px 1px 0 #020025,
+    1px 1px 0 #020025,
+    1px -1px 0 #020025,
+    -1px -1px 0 #020025;
+    transition: 0.5s;
+    color: white;
+}
+.wwdtext2{
+    font-family: BrownStdBold;
+    display: inline-block;
+    position: relative;
+    font-size: 70px;
+    text-align: center;
     line-height: initial;
     text-shadow: -1px 1px 0 #020025,
     1px 1px 0 #020025,
@@ -12,7 +26,9 @@
     transition: 0.5s;
     color: white;
 }
-
+.ml-4{
+    margin-left: 100px;
+}
 .wwdtext:hover{
     color: #020025;
 }
@@ -90,6 +106,9 @@
     .wwdtext{
         font-size: 50px;
     }
+    .wwdtext2{
+        font-size: 20px;
+    }
     .wwdsubtext{
         font-size: 20px;
     }
@@ -106,4 +125,13 @@
         margin: auto !important;
         margin-top: 20px !important;
     }
+}
+
+.anchor{
+    font-family: BrownStdRegular;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-right: 100px;
 }

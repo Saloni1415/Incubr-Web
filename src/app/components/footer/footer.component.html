@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-center">
+<!-- <div class="d-flex justify-content-center">
     <div class="footer_text my-3 my-md-5">
         We really mean business and progress
     </div>
@@ -19,28 +19,75 @@
             {{item}}
         </div>
     </div>
-</div>
-<div class="footer">
-    <div class="d-block d-md-flex justify-content-between">
-        <div class="d-flex">
-            <div *ngFor="let item of links" class="link">
-                {{item}}
+</div> -->
+
+
+
+<div class="vertical_container">
+    <div class="d-flex justify-content-between">
+        <div>
+            <div class="header-title" style="font-size: 30px;">
+                Let's get started
+            </div>   
+            <div style="height: 30px;"></div>         
+            <div class="DosisLight" style="font-size: 25px;">
+                “Time and Tide wait for no one and that's twice as true when it comes to launching your start-up.”
+            </div>
+            <div style="height: 30px;"></div>         
+            <div class="DosisLight" style="font-size: 25px;">
+            “If you are ready to accelerate your company's growth, want to know more about us or have any other queries, drop us a message and we'll get back to you in a jiffy.”
+            </div>
+            <div style="height: 30px;"></div>         
+            <div class="header-title">
+                    incubr
+            </div>
+            <div style="height: 30px;color: #222;"></div>
+            <div class="d-flex">
+                <div class="link">
+                    <img src="./assets/images/insta-icon.png" alt="" class="footer_icon" srcset="">
+                </div>
+                <div style="width: 20px;"></div>
+                <div class="link">
+                    <img src="./assets/images/linkedin.png" alt="" class="footer_icon" srcset="">
+                </div>
+                <div style="width: 20px;"></div>
+                <div class="link">
+                    <img src="./assets/images/fb.png" alt="" class="footer_icon" srcset="">
+                </div>
             </div>
         </div>
-        <div class="d-flex mt-2 mt-md-0">
-            <div class="link">
-                <img src="./assets/images/insta-icon.png" alt="" class="footer_icon" srcset="">
-            </div>
-            <div class="link">
-                <img src="./assets/images/linkedin.png" alt="" class="footer_icon" srcset="">
-            </div>
-            <div class="link">
-                <img src="./assets/images/fb.png" alt="" class="footer_icon" srcset="">
+        <div style="margin-left: 50px;">
+            <div class="frame">
+                <input type="text" placeholder="Name">
+                <div style="height:30px"></div>
+                <input type="email" placeholder="Email">
+                <div style="height:30px"></div>
+                <textarea placeholder="Message" name="Text1" cols="40" rows="5"></textarea>
+                <div style="height:30px"></div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn _button">
+                        Submit
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="d-flex mt-4">
-        <div class="subtext">Privacy </div>
-        <div class="subtext ">Terms and Conditions</div>
+</div>
+<div style="height: 120px;"></div>
+<div class="footer">
+    <div class="d-block d-md-flex justify-content-between w-100">
+            <div *ngFor="let item of links" class="link">
+                {{item}}
+            </div>
+    </div>
+    <div style="height: 30px;"></div>
+    <div class="d-flex justify-content-between">
+        <div class="d-flex">
+            <div class="subtext">Privacy </div>
+            <div class="subtext ">Terms and Conditions</div>
+        </div>
+        <div>
+            <div class="subtext ">Copyright 2021</div>
+        </div>
     </div>
 </div>

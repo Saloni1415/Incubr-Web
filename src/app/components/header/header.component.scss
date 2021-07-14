@@ -87,7 +87,7 @@
 }
 
 .iconcont{
-    padding: 10px 6px;
+    padding: 10px 4px;
     border: black 1.2px solid;
     border-radius: 50%;
 }
@@ -141,11 +141,11 @@ $menu-icon-color: #000;
     transition-delay: 0s;
 
     &:before {
-      transform: translateY(6px) rotate(-225deg);
+      transform: translateY(4px) rotate(-225deg);
     }
 
     &:after {
-      transform: translateY(-6px) rotate(225deg);
+      transform: translateY(-3px) rotate(225deg);
     }
   }
 }
