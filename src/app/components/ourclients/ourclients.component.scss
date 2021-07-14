@@ -61,7 +61,7 @@ ol{
     color: #020025;
 }
  .wrap{
-    padding:20px;
+    padding:40px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 9px 16px #15151557;
     border-radius: 13px;
@@ -74,7 +74,7 @@ ol{
 }
  .name{
     font-family: BrownStdRegular;
-    font-size: 20px;
+    font-size: 30px;
     color: #020025;
 }
  .subname{
@@ -83,7 +83,7 @@ ol{
     color: #020025;
 }
  .ml__{
-    margin-left: 630px;
+    margin-left: 430px;
 }
 @media screen and (max-width: 600px) {
      .title{
@@ -103,6 +103,11 @@ ol{
         font-size: 16px;
     }
 }
+
+.mt100{
+  margin-top: 20px !important;
+}
+
 @media screen and (max-width: 930px) {
      .ml__{
         margin-left: auto;
@@ -279,4 +284,26 @@ h2
   // position: relative;
   // vertical-align: middle;
   // text-align: center;
+}
+
+.image_roller{
+  animation: rotateInfinite 20s linear infinite;
+}
+@keyframes rotateInfinite {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+li:nth-child(2),li:nth-child(3){
+  margin-left: 10px;
+  border: #020025 1.1px solid;
+}
+
+li.active{
+  background:#020025;
 }

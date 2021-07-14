@@ -1,6 +1,7 @@
-<div class="d-flex justify-content-between px-5 py-4 pb-0">
+<div class="d-flex justify-content-between px-5 mx-2 pt-2 pb-0">
     <div class="header-title" routerLink="/" style="cursor: pointer;">
-        incubr
+        <!-- incubr -->
+        <img src="./assets/images/logoincubr_crop.png" height="90" alt="">
     </div>
     <div>
         <div class="d-flex align-items-center h-100">
@@ -24,11 +25,17 @@
         <ng-container *ngIf="data.headerOpen">
             <div class="position-fixed header_container">
                 <div class="d-flex justify-content-between">
-                    <div></div>
+                    <div style="margin-left: 100px;margin-top: 50px;">
+                        <video preload="true" style="width: 550px;"  autoplay loop muted #Footervideo>
+                            <source src="../../../assets/videos/incubr_website_video_final.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video> 
+                        <div class="BrownStdLight" style="width: 550px;font-size: 30px;text-align: center;margin-top: 30px;line-height: 33px;">Our work sums up in two key functions - “Innovation and Marketing”</div>
+                    </div>
                     <div class="header_item_container">
                         <ng-container *ngFor="let item of header">
                             <div  class="header_item text-end" (click)="data.toggleHeader();toggleNavIcon()">
-                                <p style="display: inline;" [routerLink]="item.url">
+                                <p style="display: inline-block;width: 361px;" [routerLink]="item.url">
                                     {{item.name}}
                                 </p>
                                 <span></span>

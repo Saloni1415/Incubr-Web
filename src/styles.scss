@@ -39,8 +39,8 @@
 
 
 .vertical_container{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 @media screen and (max-width: 600px) {
     .vertical_container{
@@ -51,4 +51,11 @@
 
 .DosisLight{
     font-family: Dosis;
+}
+
+.BrownStdRegular{
+    font-family: BrownStdRegular;
+}
+.BrownStdLight{
+    font-family: BrownStdLight;
 }

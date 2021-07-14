@@ -26,37 +26,38 @@
 <div class="vertical_container">
     <div class="d-flex justify-content-between">
         <div>
-            <div class="header-title" style="font-size: 30px;">
+            <div class="header-title">
                 Let's get started
             </div>   
             <div style="height: 30px;"></div>         
-            <div class="DosisLight" style="font-size: 25px;">
+            <div class="BrownStdLight" style="font-size: 25px;">
                 “Time and Tide wait for no one and that's twice as true when it comes to launching your start-up.”
             </div>
             <div style="height: 30px;"></div>         
-            <div class="DosisLight" style="font-size: 25px;">
+            <div class="BrownStdLight" style="font-size: 25px;">
             “If you are ready to accelerate your company's growth, want to know more about us or have any other queries, drop us a message and we'll get back to you in a jiffy.”
             </div>
-            <div style="height: 30px;"></div>         
-            <div class="header-title">
+            <div style="height: 10px;"></div>         
+            <!-- <div class="header-title">
                     incubr
-            </div>
-            <div style="height: 30px;color: #222;"></div>
+            </div> -->
+            <img src="./assets/images/logoincubr_crop.png" height="100" alt="">
+            <div style="height: 10px;color: #222;"></div>
             <div class="d-flex">
                 <div class="link">
-                    <img src="./assets/images/insta-icon.png" alt="" class="footer_icon" srcset="">
+                    <img height="40" src="./assets/images/insta.png" alt="" class="footer_icon" srcset="">
                 </div>
-                <div style="width: 20px;"></div>
+                <div style="width: 29px;"></div>
                 <div class="link">
-                    <img src="./assets/images/linkedin.png" alt="" class="footer_icon" srcset="">
+                    <img height="40" src="./assets/images/linkedin.png" alt="" class="footer_icon" srcset="">
                 </div>
-                <div style="width: 20px;"></div>
+                <div style="width: 29px;"></div>
                 <div class="link">
-                    <img src="./assets/images/fb.png" alt="" class="footer_icon" srcset="">
+                    <img height="40" src="./assets/images/fb.png" alt="" class="footer_icon" srcset="">
                 </div>
             </div>
         </div>
-        <div style="margin-left: 50px;">
+        <div style="margin-left: 70px;">
             <div class="frame">
                 <input type="text" placeholder="Name">
                 <div style="height:30px"></div>
@@ -75,19 +76,27 @@
 </div>
 <div style="height: 120px;"></div>
 <div class="footer">
-    <div class="d-block d-md-flex justify-content-between w-100">
-            <div *ngFor="let item of links" class="link">
-                {{item}}
-            </div>
-    </div>
-    <div style="height: 30px;"></div>
-    <div class="d-flex justify-content-between">
-        <div class="d-flex">
-            <div class="subtext">Privacy </div>
-            <div class="subtext ">Terms and Conditions</div>
-        </div>
+    <div class="d-flex justify-content-center">
         <div>
-            <div class="subtext ">Copyright 2021</div>
+            <div class="d-block d-md-flex w-100">
+                <div *ngFor="let item of links; let i = index" class="link" [ngClass]="{'marginL100':i!=0}">
+                    {{item}}
+                </div>
+            </div>
+            <div style="height: 30px;"></div>
+            <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                    <div class="subtext" style="margin-left: 0px;">Privacy </div>
+                    <div class="subtext ">Terms and Conditions</div>
+                </div>
+                <div>
+                    <div class="subtext ">Copyright 2021</div>
+                </div>
+            </div>
         </div>
     </div>
+    <div>
+
+    </div>
+
 </div>

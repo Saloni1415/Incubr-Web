@@ -56,18 +56,17 @@
   
 .header_item span:after {
     // content: '\00bb';
-    content: '⬅️';
-    color: #020025;
-    font-size: 50px;
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    // right: -20px;
-    transition: 1s;
+    // content: '⬅️';
+    // color: #020025;
+    // font-size: 50px;
+    // position: absolute;
+    // opacity: 0;
+    // top: 0;
+    // transition: 1s;
 }
   
 .header_item:hover span {
-    padding-right: 45px;
+    // padding-right: 1px;
 }
 
 .header_item:hover span:after {
@@ -87,7 +86,7 @@
 }
 
 .iconcont{
-    padding: 10px 4px;
+    padding: 14.33px 4.34px;
     border: black 1.2px solid;
     border-radius: 50%;
 }
@@ -100,7 +99,7 @@ $menu-icon-color: #000;
 .nav-toggle {
   // display: block;
   // padding: 17px 12px;
-  width: 18px;
+  width: 23px;
   height: 0px;
   border: 0;
   box-sizing: content-box;

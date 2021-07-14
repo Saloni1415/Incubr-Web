@@ -11,7 +11,7 @@
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-    margin-left: 30px;
+    // margin-left: 30px;
 
 }
 
@@ -26,10 +26,10 @@
 }
 
 .header-title{
-    font-family: Dosis-Bold;
+    font-family: BrownStdRegular;
     color: #020025;
     opacity: 1;
-    font-size: 58.33px;
+    font-size: 35px;
 }
 
 .contact_links{
@@ -106,4 +106,8 @@
     padding: 10px 30px;
     border-radius: 5px;
     font-size: 15px;
+  }
+
+  .marginL100{
+      margin-left: 150px;
   }
