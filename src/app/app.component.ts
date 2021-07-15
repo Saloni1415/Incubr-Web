@@ -15,35 +15,41 @@ export class AppComponent implements OnInit{
 
     //FOR MOBILE VIEW
 
-    if(window.innerWidth < 600){
-      //@ts-ignore
-      document.getElementById('viewport').setAttribute("content", "width=1024")
-      //@ts-ignore
-      setTimeout(()=>{
-        var Contelements:any = document.getElementsByClassName('vertical_container')
-        for (var i=0 ; i<Contelements.length;i++) {
-          Contelements[i].style.marginLeft = '10px'
-          Contelements[i].style.marginRight = '10px'
-        }
-      },10)
-    }
-    $(window).resize(function(e:any){
-      //@ts-ignore
-      document.getElementById('viewport').setAttribute("content", "width=1024")
-      //@ts-ignore
-      setTimeout(()=>{
-        var Contelements:any = document.getElementsByClassName('vertical_container')
-        for (var i=0 ; i<Contelements.length;i++) {
-          Contelements[i].style.marginLeft = '10px'
-          Contelements[i].style.marginRight = '10px'
-        }
-      },10)
-    });
+    // if(window.innerWidth < 600){
+    //   //@ts-ignore
+    //   document.getElementById('viewport').setAttribute("content", "width=1024")
+    //   //@ts-ignore
+    //   setTimeout(()=>{
+    //     var Contelements:any = document.getElementsByClassName('vertical_container')
+    //     for (var i=0 ; i<Contelements.length;i++) {
+    //       Contelements[i].style.marginLeft = '10px'
+    //       Contelements[i].style.marginRight = '10px'
+    //     }
+    //   },10)
+    // }
+    // $(window).resize(function(e:any){
+    //   //@ts-ignore
+    //   document.getElementById('viewport').setAttribute("content", "width=1024")
+    //   //@ts-ignore
+    //   setTimeout(()=>{
+    //     var Contelements:any = document.getElementsByClassName('vertical_container')
+    //     for (var i=0 ; i<Contelements.length;i++) {
+    //       Contelements[i].style.marginLeft = '10px'
+    //       Contelements[i].style.marginRight = '10px'
+    //     }
+    //   },10)
+    // });
 
 
     //FOR SCROLL BAR
-    //@ts-ignore
-    Scrollbar.init(document.querySelector('#my-scrollbar'));
+    $(document).ready(function(){
+    //@ts-ignore'
+      $(this).scrollTop(1,0);
+    //@ts-ignore'
+      $(this).scrollTop(0,0);
+    //@ts-ignore'
+        Scrollbar.init(document.querySelector('#my-scrollbar'),{renderByPixels:true});
+    });
     // Scrollbar
 
     // $(document).on('mousemove', function(e:any){
