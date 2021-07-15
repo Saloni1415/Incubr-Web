@@ -120,3 +120,27 @@
     // max-width: 90%;
 }
 
+
+.wwdtext{
+    font-family: BrownStdBold;
+    font-size: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.wwd2{
+    font-family: BrownStdLight;
+    color: white;
+    font-size: 30px;
+    max-width: 920px;
+}
+
+.learn_btn{
+    border: 1px white solid;
+    padding: 10px 20px;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+}

@@ -12,25 +12,54 @@ export class AppComponent implements OnInit{
 
   }
   ngAfterViewInit(){
+
+    //FOR MOBILE VIEW
+
+    if(window.innerWidth < 600){
+      //@ts-ignore
+      document.getElementById('viewport').setAttribute("content", "width=1024")
+      //@ts-ignore
+      setTimeout(()=>{
+        var Contelements:any = document.getElementsByClassName('vertical_container')
+        for (var i=0 ; i<Contelements.length;i++) {
+          Contelements[i].style.marginLeft = '10px'
+          Contelements[i].style.marginRight = '10px'
+        }
+      },10)
+    }
+    $(window).resize(function(e:any){
+      //@ts-ignore
+      document.getElementById('viewport').setAttribute("content", "width=1024")
+      //@ts-ignore
+      setTimeout(()=>{
+        var Contelements:any = document.getElementsByClassName('vertical_container')
+        for (var i=0 ; i<Contelements.length;i++) {
+          Contelements[i].style.marginLeft = '10px'
+          Contelements[i].style.marginRight = '10px'
+        }
+      },10)
+    });
+
+
     //FOR SCROLL BAR
     //@ts-ignore
     Scrollbar.init(document.querySelector('#my-scrollbar'));
     // Scrollbar
 
-    $(document).on('mousemove', function(e:any){
-        $('#cursor').css({
-          left:  e.pageX,
-          top:   e.pageY
-        });
-    });
+    // $(document).on('mousemove', function(e:any){
+    //     $('#cursor').css({
+    //       left:  e.pageX,
+    //       top:   e.pageY
+    //     });
+    // });
   
-    $(window).on('scroll', function(e:any){
-      console.log('scrolled')
-        $('#cursor').css({
-          left:  e.pageX,
-          top:   e.pageY
-        });
-    });
+    // $(window).on('scroll', function(e:any){
+    //   console.log('scrolled')
+    //     $('#cursor').css({
+    //       left:  e.pageX,
+    //       top:   e.pageY
+    //     });
+    // });
     //FOR CURSOR
     // const cursor = document.querySelector('.cursor');
     // document.addEventListener('mousemove', e => {

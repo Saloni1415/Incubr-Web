@@ -7,7 +7,7 @@ declare var $:any;
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  header = [{name:'about',url:'/'},{name:'our work',url:'/'},{name:'blogs',url:'/blog'},{name:'contact',url:'/'}]
+  header = [{name:'about',url:'/'},{name:'our work',url:'/our-work'},{name:'blogs',url:'/blog'},{name:'contact',url:'/'}]
   constructor(public data:DataService) { }
 
   ngOnInit(): void {

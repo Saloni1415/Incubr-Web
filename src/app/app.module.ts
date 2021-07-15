@@ -16,6 +16,7 @@ import { BlogsComponent } from './components/blogs/blogs.component';
 import { AboutComponent } from './components/about/about.component';
 import { LogolistComponent } from './pages/Bloglist/logolist.component';
 import { BlogdetailComponent } from './pages/blogdetail/blogdetail.component';
+import { OurworksdetailComponent } from './pages/ourworksdetail/ourworksdetail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { BlogdetailComponent } from './pages/blogdetail/blogdetail.component';
     BlogsComponent,
     AboutComponent,
     LogolistComponent,
-    BlogdetailComponent
+    BlogdetailComponent,
+    OurworksdetailComponent
   ],
   imports: [
     BrowserModule,

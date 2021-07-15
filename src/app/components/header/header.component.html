@@ -35,7 +35,7 @@
                     <div class="header_item_container">
                         <ng-container *ngFor="let item of header">
                             <div  class="header_item text-end" (click)="data.toggleHeader();toggleNavIcon()">
-                                <p style="display: inline-block;width: 361px;" [routerLink]="item.url">
+                                <p style="display: inline-block;width: 361px;cursor: pointer;" [routerLink]="item.url">
                                     {{item.name}}
                                 </p>
                                 <span></span>

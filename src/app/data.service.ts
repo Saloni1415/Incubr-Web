@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
+import Scrollbar from 'smooth-scrollbar';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -9,9 +11,12 @@ export class DataService {
   toggleHeader(){
     this.headerOpen = !this.headerOpen
     if(this.headerOpen){
+    Scrollbar.destroyAll();
       document.getElementsByTagName('body')[0].style.overflow='hidden'
     }else{
-      document.getElementsByTagName('body')[0].style.overflow='auto'
+      //@ts-ignore
+      Scrollbar.init(document.querySelector('#my-scrollbar'));
+      // document.getElementsByTagName('body')[0].style.overflow='auto'
     }
   }
   constructor(public http:HttpClient) {
