@@ -1,0 +1,45 @@
+<div class="position-relative" style="z-index: 3;">
+ <div style="background: black;display: inline-block;margin-left: 102px;
+    margin-top: 192px;z-index: 3;" 
+    class="px-2 position-relative">
+     <div class="client_text">
+        CLIENTS
+     </div>
+ </div>
+
+ <div style="width:778px;height:409px;background: #4A3939;padding: 80px;padding-left: auto;
+       padding-right: 0px;margin-left: 156px;z-index: 2;top: -45px;" class="client_carousel position-relative">
+    <ngx-slick-carousel class="carousel" 
+        #slickModal="slick-carousel" 
+        [config]="slideConfig" 
+        (init)="slickInit($event)"
+        (breakpoint)="breakpoint($event)"
+        (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)">
+    <div ngxSlickItem *ngFor="let slide of [0,1,2,3]" class="slide">
+        <div class="carousel_text">
+            Our clients are HEROES 
+            who have faith in us and 
+            the power of innovation 
+            and technology to better 
+            the world.
+        </div>
+    </div>
+    </ngx-slick-carousel>
+ </div>
+
+ <div class="w-100 position-relative" style="top:-45px">
+     <div class="m-auto" style="width: fit-content;">
+        <img src="../../../assets/incubrassets/speaker.png" width="950px" height="633px" alt="">
+     </div>
+ </div>
+
+ <div class="d-flex justify-content-center" style="margin-top: 246px;margin-bottom: 168px;">
+    <div class="ourvalues_text">
+        Our 
+        <span style="text-decoration: underline;color: black;font-size: 35px;font-weight: bold;">values</span> 
+        are aligned with our actions, and they make enough voice.
+    </div>
+ </div>
+</div>
+

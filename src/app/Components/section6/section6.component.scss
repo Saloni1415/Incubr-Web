@@ -1,0 +1,39 @@
+.redframe{
+    height: 770px;
+    background: #FF2121;
+}
+
+.blackframe{
+    width: 420px;
+    height: 1258px;
+    background: black;
+    margin-top: 185px;
+}
+
+.blackframe .text{
+    padding: 70px;
+}
+
+.blackframe .text span{
+    font-size: 28px;
+    line-height: 28px;
+    color: white;
+    text-align: left;
+    font-family: BrownStdRegular;
+}
+
+.whitecircle{
+    width: 115px;
+    height: 115px;
+    background: white;
+    border-radius: 50%;
+}
+
+.sharingcreativity{
+    color: #000000;
+    font-family: LeagueSpartan;
+    font-size: 200px;
+    text-align: right;
+    letter-spacing: 7px;
+    // margin-right: 100px;
+}

@@ -1,0 +1,128 @@
+.mesh1{
+    background:url(../../../assets/bgmesh/mesh1.png);
+    width: 50%;
+    height: 411px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.section1{
+    top: -23px;
+    // z-index: 4;
+}
+
+.redrect{
+    width: 50%;
+    background-color: #ff0000;
+    height: 192px;
+    position: relative;
+    z-index: 3;
+}
+
+.horizontal_line_container{
+    width: 100%;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    top: 54px;
+}
+.horizontal_line{
+    width: 919px;
+    height: 6px;
+    background-color: #060430;
+    margin: auto;
+}
+
+.vertical_line_container{
+    width: 100%;
+    position: absolute;
+    left:0;
+    z-index: 2;
+    top: 54px;
+}
+.vertical_line{
+    width: 6px;
+    height: 1157px;
+    background-color: #060430;
+    margin-left: auto;
+    margin-right: 247px;
+    position: relative;
+    z-index: 1;
+}
+
+.vertical_bal{
+    top:260px;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: 1.96px solid #160000;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: calc(247px - 22px);
+}
+
+.social{
+    position: fixed;
+    right: 40px;
+    top: 368px;
+    z-index: 10;
+}
+// .social img{
+//     margin-top: 10px;
+//     background-color: red;
+//     background-blend-mode: multiply;
+// }
+
+//MOVING BOARD
+.banner_container{
+    width: 100%;
+    overflow: hidden;
+}
+.scroll {
+    display: flex;
+    width: 100%;
+    div {
+      font-size: 50px;
+      color: #545454;
+      white-space: nowrap;
+      animation: animate 40s -40s linear infinite;
+      will-change: transform;
+      &:nth-child(2) {
+        animation: animate2 40s -20s linear infinite;
+        margin-left: -30px;
+      }
+    }
+    span {
+      -webkit-text-stroke: 2px #000000;
+      color: #ffffff;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes animate2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  .divider{
+      background-color: #020024;
+      height: 3px;
+      width: 100%;
+  }
