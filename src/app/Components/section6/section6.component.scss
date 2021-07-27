@@ -37,3 +37,14 @@
     letter-spacing: 7px;
     // margin-right: 100px;
 }
+#rotatetext{
+    animation: rotate 40s infinite linear;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

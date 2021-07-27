@@ -13,6 +13,8 @@ import { Section4Component } from './Components/section4/section4.component';
 import { Section5Component } from './Components/section5/section5.component';
 import { Section6Component } from './Components/section6/section6.component';
 import { Section7Component } from './Components/section7/section7.component';
+import { LandingComponent } from './Pages/landing/landing.component';
+import { MenuComponent } from './Pages/menu/menu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { Section7Component } from './Components/section7/section7.component';
     Section4Component,
     Section5Component,
     Section6Component,
-    Section7Component
+    Section7Component,
+    LandingComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

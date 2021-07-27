@@ -11,5 +11,4 @@ export class Section4Component implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
