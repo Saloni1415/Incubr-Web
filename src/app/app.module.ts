@@ -15,6 +15,11 @@ import { Section6Component } from './Components/section6/section6.component';
 import { Section7Component } from './Components/section7/section7.component';
 import { LandingComponent } from './Pages/landing/landing.component';
 import { MenuComponent } from './Pages/menu/menu.component';
+import { HttpClientModule } from "@angular/common/http";
+import { DataService } from './data.service';
+import { BlogsComponent } from './Pages/blogs/blogs.component';
+import { BlogsdetailComponent } from './Pages/blogsdetail/blogsdetail.component';
+import { OurworkdetailComponent } from './Pages/ourworkdetail/ourworkdetail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,14 +33,18 @@ import { MenuComponent } from './Pages/menu/menu.component';
     Section6Component,
     Section7Component,
     LandingComponent,
-    MenuComponent
+    MenuComponent,
+    BlogsComponent,
+    BlogsdetailComponent,
+    OurworkdetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

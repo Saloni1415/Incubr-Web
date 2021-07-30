@@ -1,12 +1,12 @@
 .mesh1{
     background:url(../../../assets/inc/mesh2-.png);
     width: 50%;
-    height: 60vh;
+    height: 97vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 
 .section1{
@@ -40,25 +40,24 @@
 }
 
 .vertical_line_container{
-    width: 100%;
-    position: absolute;
-    left:0;
-    z-index: 2;
-    top: 54px;
+  // width: 100%;
+  position: absolute;
+  left:80vw;
+  z-index: 2;
+  top: 54px;
 }
 .vertical_line{
     width: 6px;
     height: 1000px;
     background-color: #060430;
-    margin-left: auto;
-    margin-right: 247px;
+    // margin-left: auto;
+    // margin-right: 247px;
     position: relative;
     z-index: 1;
 }
 
 .vertical_bal{
     top:300px;
-    // left: 708px;
     position: relative;
     background-color: white;
     z-index: 2;
@@ -66,9 +65,8 @@
     height: 50px;
     border: 1.96px solid #160000;
     border-radius: 50%;
+    margin-left: -22px;
     // cursor: move;
-    margin-left: auto;
-    margin-right: calc(247px - 22px);
 }
 
 .social{
@@ -85,7 +83,7 @@
 
 //MOVING BOARD
 .banner_container{
-    width: 81.3%;
+    width: 80.4vw;
     overflow: hidden;
 }
 .scroll {

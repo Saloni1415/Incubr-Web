@@ -5,3 +5,39 @@
     position: fixed;
     top:0
 }
+.sidetext{
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    font-family: BrownStdBold;
+    color: black;
+    background: white;
+    display: inline-block;
+    padding: 3px 10px;
+    margin-bottom: 3.3vh;
+}
+
+.divider_horizontal{
+    background: #747272;
+    height: 2px;
+    width: 100vw;
+    top: 50%;
+}
+.divider_vertical{
+    background: #747272;
+    width: 2px;
+    height: 100vh;
+    right: 22vw;
+}
+.sidetextSM{
+    font-family: BrownStdRegular;
+    color:#FFFFFF;
+    font-size: 1.4rem;
+}
+
+.bottomtext{
+    color: white;
+    font-size: 1.4rem;
+    font-family: BrownStdRegular;
+    text-align: center;
+    margin-top: 3vh;
+}

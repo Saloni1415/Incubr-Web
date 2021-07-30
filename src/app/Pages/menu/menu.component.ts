@@ -8,7 +8,7 @@ import { DataService } from 'src/app/data.service';
 export class MenuComponent implements OnInit {
 
   constructor(public data:DataService) { }
-
+  items = ['home','startups','corporations','incubr diary','about','our impact']
   ngOnInit(): void {
   }
 

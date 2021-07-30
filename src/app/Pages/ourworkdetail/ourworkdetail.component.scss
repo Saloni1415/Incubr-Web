@@ -1,0 +1,84 @@
+.detail_text{
+    font-size: 35px;
+    line-height: 46px;
+    color: #020025;
+    font-weight: 300;
+    font-family: "BrownStdBold";
+}
+
+.card_{
+    border: 1px solid #000000;
+    overflow: hidden;
+    border-radius: 11px;
+}
+
+.card_title{
+    font-family: BrownStdBold;
+    font-size: 54px;
+    text-align: left;
+}
+
+.side_hr{
+    // height: 100%;
+    width: 1px;
+    margin-right: 50px;
+    background-color: black;
+}
+.bulb{
+    border: black 1px solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    position: absolute;
+    // top: 50%;
+    left: -10px;
+    z-index: 2;
+    background-color: white ;
+}
+
+
+
+
+.title{
+    font-family: BrownStdBold;
+    text-shadow: -1px 1px 0 #020025,
+    1px 1px 0 #020025,
+    1px -1px 0 #020025,
+    -1px -1px 0 #020025;
+    color: white;
+    font-size: 120px;
+    line-height: 100px;
+    transition: 0.5s;
+    display: inline-block;
+    position: relative;
+}
+
+.title:hover{
+    color: #020025;
+}
+.title::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #020025;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.title:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.visit{
+    border:1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: max-content;
+    font-size: 20px;
+    color: black;
+}

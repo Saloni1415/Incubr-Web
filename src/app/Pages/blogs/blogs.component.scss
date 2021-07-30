@@ -1,0 +1,44 @@
+.detail_text{
+    font-size: 33px;
+    line-height: 46px;
+    color: #020025;
+    font-weight: 300;
+    font-family: "BrownStdBold";
+}
+
+.card_{
+    border: 1px solid #000000;
+    overflow: hidden;
+    border-radius: 11px;
+}
+
+.card_title{
+    font-family: BrownStdBold;
+    font-size: 23px;
+    text-align: left;
+}
+.card_subtitle{
+    font-family: BrownStdRegular;
+    font-size: 17px;
+    color: black;
+    text-align: left;
+}
+
+.side_hr{
+    // height: 100%;
+    width: 1px;
+    margin-right: 50px;
+    background-color: black;
+}
+.bulb{
+    border: black 1px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: -14px;
+    z-index: 2;
+    background-color: white ;
+}
