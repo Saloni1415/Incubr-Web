@@ -82,3 +82,16 @@ body .slick-next {
 .client_carousel .slick-dots {
     left: -200px !important;
 }
+
+
+.rotate{
+    animation: rotate 40s infinite linear;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

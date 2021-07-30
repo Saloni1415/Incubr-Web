@@ -1,48 +1,47 @@
-<section class="position-relative section1 w-100">
-    <!-- <div class="horizontal_line_container">
-        <div class="horizontal_line"></div>
-    </div> -->
-    <div class="vertical_line_container">
-        <!-- <div class="vertical_bal" id="draggable-div"
-        (mousedown)="onGrab()" (mouseup)="onLetGo()" (mouseout)="onLetGo()"></div> -->
-        <div class="vertical_bal" id="draggable-div"></div>
-        <div class="vertical_line"></div>
-    </div>
-    <div class="d-flex position-relative w-100" style="overflow: hidden;">
-        <video preload="true" width="50%" autoplay loop muted #Topvideo
-        style="height: 400px;position: absolute;z-index: 2;top: 130px;left: 100px;">
-            <source src="../../../assets/videos/landing_page_video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="mesh1"></div>
-
-        <div class="redrect parallax" data-parallax="0.5">
-            <div class="bg-text">SOME TEXT </div>
-            <div class="spotlight" id="spotlight"></div>
+    <section class="position-relative section1 w-100" style="height: calc(100vh - 39px);">
+        <!-- <div class="horizontal_line_container">
+            <div class="horizontal_line"></div>
+        </div> -->
+        <div class="vertical_line_container">
+            <!-- <div class="vertical_bal" id="draggable-div"
+            (mousedown)="onGrab()" (mouseup)="onLetGo()" (mouseout)="onLetGo()"></div> -->
+            <div class="vertical_bal" id="draggable-div"></div>
+            <div class="vertical_line"></div>
         </div>
-    </div>
-
-    <!-- <div style="height: 150px;"></div> -->
-</section>
-<div class="banner_container position-relative" style="top:-100px">
-    <div class="divider mb-2"></div>
-    <div class="scroll text4 BrownStdRegular">
-        <div style="font-size: 30px;">
-        "We assist from seed sown to tree grown."
+        <div class="d-flex position-relative w-100">
+            <video preload="true" width="50%" autoplay loop muted #Topvideo
+            style="height: 80vh;position: absolute;z-index: 2;top: 7vh;left: 100px;">
+                <source src="../../../assets/videos/landing_page_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="mesh1"></div>
+            <div class="redrect parallax" data-parallax="0.5">
+                <div class="bg-text">SOME TEXT </div>
+                <div class="spotlight" id="spotlight"></div>
+            </div>
         </div>
-    </div>
-    <div class="divider mt-2"></div>
-</div>
-
-
-<div class="social">
+        <div style="height:30%;"></div>
+        <div class="banner_container" style="margin-top: auto;position: absolute;bottom:0px">
+            <div class="divider mb-2"></div>
+            <div class="scroll BrownStdRegular">
+                <div style="font-size: 30px;">
+                "We assist from seed sown to tree grown."
+                </div>
+                <div style="font-size: 30px;">
+                    "We assist from seed sown to tree grown."
+                </div>
+            </div>
+            <div class="divider mt-2"></div>
+        </div>    
+    </section>
+<div class="social" id="social">
     <div>
-        <img src="../../../assets/inc/whatsapp.png" width="59" height="59">
+        <img src="../../../assets/inc/whatsapp.png" id="whatsapp" width="59" height="59">
     </div>
     <div>
-        <img src="../../../assets/inc/insta.png" width="59" height="59">
+        <img src="../../../assets/inc/insta.png" id="insta" width="59" height="59">
     </div>
     <div>
-        <img src="../../../assets/inc/linked.png" width="59" height="59">
+        <img src="../../../assets/inc/linked.png" id="linkedin" width="59" height="59">
     </div>
 </div>

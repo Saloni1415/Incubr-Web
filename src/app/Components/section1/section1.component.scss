@@ -1,7 +1,7 @@
 .mesh1{
-    background:url(../../../assets/inc/mesh2.png);
-    width: 630px;
-    height: 511px;
+    background:url(../../../assets/inc/mesh2-.png);
+    width: 50%;
+    height: 60vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10,16 +10,16 @@
 }
 
 .section1{
-    top: -129px;
+    top: -99px;
     // z-index: 4;
 }
 
 .redrect{
     margin-top: 65px;
-    width: 40%;
-    max-width: 569px;
+    width: 37% !important;
+    // max-width: 569px;
     background-color: #ff0000;
-    height: 168px;
+    height: 200px;
     position: relative;
     left:-160px;
     z-index: 3;
@@ -85,30 +85,37 @@
 
 //MOVING BOARD
 .banner_container{
-    width: 100%;
+    width: 81.3%;
     overflow: hidden;
 }
 .scroll {
-    // display: flex;
-    // width: 100%;
-    div {
-      // font-size: 45px;
-      // color: #545454;
-      // white-space: nowrap;
-      // transform: translateX(82%);
-        animation: animate 10s linear infinite;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    width: max-content;
+    div:nth-child(1) {
+      // transform: translateX(-297%);
+        animation: animate 5s linear infinite;
     }
-    // span {
-    //   -webkit-text-stroke: 2px #000000;
-    //   color: #ffffff;
-    // }
+    div:nth-child(2) {
+      // transform: translateX(-197%);
+        animation: animate10 5s linear infinite;
+    }
   }
   @keyframes animate {
     from {
-      transform: translateX(82%);
+      transform: translateX(199%);
     }
     to {
-      transform: translateX(-50%);
+      transform: translateX(-297%);
+    }
+  }
+  @keyframes animate10 {
+    from {
+      transform: translateX(299%);
+    }
+    to {
+      transform: translateX(-197%);
     }
   }
 

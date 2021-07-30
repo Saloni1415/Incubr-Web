@@ -17,8 +17,34 @@
 
 .ourvalues_text{
     color: #020025;
-    font-size: 26px;
+    font-size: 38px;
     font-family: BrownStdRegular;
-    width: 518px;
+    // width: 518px;
     text-align: center;
+}
+
+
+//MOVING BOARD
+.banner_container{
+    width: 100%;
+    overflow: hidden;
+}
+.scroll {
+    div {
+        animation: animate4 10s linear infinite;
+    }
+  }
+  @keyframes animate4 {
+    from {
+      transform: translateX(82%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .divider{
+    background-color: #020024;
+    height: 3px;
+    width: 100%;
 }
