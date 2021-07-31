@@ -1,38 +1,39 @@
 .redframe{
-    height: 770px;
+    height: 54vw;
     background: #FF2121;
 }
 
 .blackframe{
-    width: 420px;
-    height: 1258px;
+    width: 30.7vw;
+    // height: 1258px;
+    height: 95vw;
     background: black;
-    margin-top: 185px;
+    margin-top: 11vw;
 }
 
 .blackframe .text{
-    padding: 70px;
+    padding: 5vw;
 }
 
 .blackframe .text span{
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 2vw;
+    line-height: 2.1vw;
     color: white;
     text-align: left;
     font-family: BrownStdRegular;
 }
 
 .whitecircle{
-    width: 115px;
-    height: 115px;
     background: white;
     border-radius: 50%;
+    height: 8.1vw;
+    width: 8.1vw;
 }
 
 .sharingcreativity{
     color: #000000;
     font-family: LeagueSpartan;
-    font-size: 200px;
+    font-size: 14.65vw;
     text-align: right;
     letter-spacing: 7px;
     // margin-right: 100px;
