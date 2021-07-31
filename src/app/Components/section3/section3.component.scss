@@ -1,8 +1,10 @@
 .client_text{
     // font-size: 73px;
+    margin-top: 1vw !important;
     font-size: 5.4vw;
     line-height: 5.4vw;
     color: white;
+    font-family: BrownStdBold;
 }
 
 .carousel_text{
@@ -12,7 +14,7 @@
     line-height: 3.5vw;
     font-family: BrownStdBold;
     background: transparent;
-    text-align: right;
+    text-align: left;
 }
 
 .ourvalues_text{
@@ -30,16 +32,29 @@
     overflow: hidden;
 }
 .scroll {
-    div {
-        animation: animate4 10s linear infinite;
+  display: flex;
+  width: max-content;
+    div:nth-child(1){
+        animation: animate4 20s linear infinite;
     }
+    div:nth-child(2){
+      animation: animate41 20s linear infinite;
+  }
   }
   @keyframes animate4 {
     from {
-      transform: translateX(82%);
+      transform: translateX(100%);
     }
     to {
-      transform: translateX(-50%);
+      transform: translateX(-220%);
+    }
+  }
+  @keyframes animate41 {
+    from {
+      transform: translateX(120%);
+    }
+    to {
+      transform: translateX(-200%);
     }
   }
 

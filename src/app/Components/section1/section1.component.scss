@@ -1,7 +1,7 @@
 .mesh1{
     background:url(../../../assets/inc/mesh2-.png);
     width: 50%;
-    height: 97vh;
+    height: 80vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -19,7 +19,8 @@
     width: 37% !important;
     // max-width: 569px;
     background-color: #ff0000;
-    height: 200px;
+    // height: 200px;
+    height: fit-content;
     position: relative;
     left:-11.5vw;
     z-index: 3;
@@ -81,47 +82,7 @@
 //     background-blend-mode: multiply;
 // }
 
-//MOVING BOARD
-.banner_container{
-    width: 80.4vw;
-    overflow: hidden;
-}
-.scroll {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    width: max-content;
-    div:nth-child(1) {
-      // transform: translateX(-297%);
-        animation: animate 5s linear infinite;
-    }
-    div:nth-child(2) {
-      // transform: translateX(-197%);
-        animation: animate10 5s linear infinite;
-    }
-  }
-  @keyframes animate {
-    from {
-      transform: translateX(199%);
-    }
-    to {
-      transform: translateX(-297%);
-    }
-  }
-  @keyframes animate10 {
-    from {
-      transform: translateX(299%);
-    }
-    to {
-      transform: translateX(-197%);
-    }
-  }
 
-  .divider{
-      background-color: #020024;
-      height: 3px;
-      width: 100%;
-  }
 
 
   //SPOTLIGHT EFFECT
@@ -132,10 +93,14 @@
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0); /* Black w/opacity/see-through */
   font-weight: 900;
-  font-size: 30pt;
+  font-size: 20pt;
   width: fit-content;
   padding: 20px;
   text-align: left;
+
+  font-family: BrownStdBold;
+  line-height: initial;
+  // font-size: 2px;
 }
 
 .spotlight {
