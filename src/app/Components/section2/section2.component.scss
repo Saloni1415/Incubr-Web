@@ -63,33 +63,32 @@
 }
 .scroll {
   display: flex;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
-  width: max-content;
   div:nth-child(1) {
     // transform: translateX(-297%);
-      animation: animate 40s linear infinite;
+      animation: animate 10s linear infinite;
   }
   div:nth-child(2) {
     // transform: translateX(-197%);
-      animation: animate10 40s linear infinite;
+      animation: animate10 10s linear infinite;
   }
 }
 }
 @keyframes animate {
   from {
-    transform: translateX(199%);
+    transform: translateX(240%);
   }
   to {
-    transform: translateX(-297%);
+    transform: translateX(-450%);
   }
 }
 @keyframes animate10 {
   from {
-    transform: translateX(299%);
+    transform: translateX(360%);
   }
   to {
-    transform: translateX(-197%);
+    transform: translateX(-200%);
   }
 }
 

@@ -151,53 +151,104 @@ body{
 
 //HOVER BUTTON
 
-.coolBeans{
-  border-left: 2px solid currentColor;
-  color: white;
-  font-size: 18px;
-  line-height: 0.56;
-  font-weight: 900;
-  vertical-align: middle;
+// .coolBeans{
+//   border-left: 2px solid currentColor;
+//   color: white;
+//   font-size: 18px;
+//   line-height: 0.56;
+//   font-weight: 900;
+//   vertical-align: middle;
 
 
-  border-radius :3rem;
-  // color :yellow;
-  overflow: hidden;
-  padding :1rem 2rem;
-  position: relative;
-  text-decoration :none;
-  transition :.2s transform ease-in-out;
-  will-change :transform;
-  z-index :0;
+//   border-radius :3rem;
+//   // color :yellow;
+//   overflow: hidden;
+//   padding :1rem 2rem;
+//   position: relative;
+//   text-decoration :none;
+//   transition :.2s transform ease-in-out;
+//   will-change :transform;
+//   z-index :0;
   
-  &::after{
-    background-color: red;
-    opacity: 0;
-    border-radius: 3rem;
+//   &::after{
+//     background-color: red;
+//     opacity: 0;
+//     border-radius: 3rem;
+//     content: '';
+//     display :block;
+//     height :100%;
+//     width :100%;
+//     position :absolute;
+//     left :0;
+//     top :0;
+//     transform :translate(-100%, 0) ;
+//     transform-origin :top left;
+//     transition: .2s transform ease-out;
+//     will-change :transform;
+//     z-index :-1;
+//   }
+    
+//   &:hover::after{
+//     transform :translate(0, 0);
+//     opacity: 1;
+//   }
+    
+//   &:hover{
+//     border: 2px solid transparent;
+//     // color :indigo;
+//     transform :scale(1.05);
+//     will-change: transform;
+//   }
+    
+// }
+
+
+
+//HOVER BUTTON 2
+$color: red;
+
+.buttonhover {
+  font-family: BrownStdBold;
+  display: inline-block;
+  padding: 1rem 2.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  // text-transform: uppercase;
+  text-decoration: unset !important;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after {
     content: '';
-    display :block;
-    height :100%;
-    width :100%;
-    position :absolute;
-    left :0;
-    top :0;
-    transform :translate(-100%, 0) ;
-    transform-origin :top left;
-    transition: .2s transform ease-out;
-    will-change :transform;
-    z-index :-1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: $color;
+    border-radius: 10rem;
+    z-index: -2;
   }
-    
-  &:hover::after{
-    transform :translate(0, 0);
-    opacity: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($color, 15%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
   }
-    
-  &:hover{
-    border: 2px solid transparent;
-    // color :indigo;
-    transform :scale(1.05);
-    will-change: transform;
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
   }
-    
 }
