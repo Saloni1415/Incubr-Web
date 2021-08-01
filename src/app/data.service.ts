@@ -13,7 +13,6 @@ export class DataService {
   public async getBlogs(){
     // let id  = this.router.
     this.blogslist =await this.http.get(`http://143.110.180.129/blog/api/blog/`).toPromise();
-    console.log(this.blogslist)
     return this.blogslist
   }
   public async getBlog(id:any){

@@ -7,9 +7,53 @@
 }
 
 .portfolioFrame{
+  position: relative;
     width: 454px;
     height: 641px;
     border: solid #020025 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.overlaymoveanim::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: red;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  left:100%;
+  animation: overlaymoveanim 1.5s linear ;
+}
+.overlaymoveanim::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left:200%;
+  z-index: 2;
+  animation: overlaymoveanim2 1.5s linear ;
+}
+@keyframes overlaymoveanim {
+  from{
+    left: -200%;
+  }
+  to{
+    left: 100%;
+  }
+}
+@keyframes overlaymoveanim2 {
+  from{
+    left: -100%;
+  }
+  to{
+    left: 200%;
+  }
 }
 
 
@@ -251,4 +295,20 @@ $color: red;
       width: 100%;
     }
   }
+}
+
+.btnbordr{
+  position: absolute;
+  left:0%;
+  top:0%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid transparent;  
+  content: "";
+  border-radius: 10rem  ;
+  width: 60px;
+  height: 100%;
+}
+
+.buttonhover:hover .btnbordr{
+  display: none;
 }
