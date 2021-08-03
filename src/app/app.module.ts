@@ -20,6 +20,8 @@ import { DataService } from './data.service';
 import { BlogsComponent } from './Pages/blogs/blogs.component';
 import { BlogsdetailComponent } from './Pages/blogsdetail/blogsdetail.component';
 import { OurworkdetailComponent } from './Pages/ourworkdetail/ourworkdetail.component';
+import { CorporationspopupComponent } from './Components/corporationspopup/corporationspopup.component';
+import { StartuppopupComponent } from './Components/startuppopup/startuppopup.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +38,9 @@ import { OurworkdetailComponent } from './Pages/ourworkdetail/ourworkdetail.comp
     MenuComponent,
     BlogsComponent,
     BlogsdetailComponent,
-    OurworkdetailComponent
+    OurworkdetailComponent,
+    CorporationspopupComponent,
+    StartuppopupComponent
   ],
   imports: [
     BrowserModule,

@@ -32,13 +32,13 @@
             <span class="rocket_text" style="font-family:BrownStdBold">We he<span style="color: black;">lp</span>
             </span>
         </div>
-        <div style="background: black;padding-top: 1vw;display: block;margin-top: 40px;width: fit-content;" class="px-2">
+        <div data-toggle="modal" data-target="#startupModal" style="background: black;padding-top: 1vw;display: block;margin-top: 40px;width: fit-content;cursor: pointer;" class="px-2">
             <span class="rocket_text">START UPS</span>
         </div>
         <div style="left:200px;top:-15px;z-index: 2;" class="px-2 position-relative">
             <span class="rocket_text" style="font-family:BrownStdBold">&</span>
         </div>
-        <div style="background: black;padding-top: 1vw;top: -45px;display: inline-block" class="px-2 position-relative">
+        <div data-toggle="modal" data-target="#corporationModal" style="background: black;padding-top: 1vw;top: -45px;display: inline-block;cursor:pointer" class="px-2 position-relative">
             <span class="rocket_text">CORPORATIONS</span>
         </div>
     </div>
@@ -80,3 +80,7 @@
         </div>
     </div>
 </div>
+
+
+<app-corporationspopup></app-corporationspopup>
+<app-startuppopup></app-startuppopup>

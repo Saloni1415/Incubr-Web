@@ -1,4 +1,4 @@
-@import "~bootstrap/dist/css/bootstrap.css";
+// @import "~bootstrap/dist/css/bootstrap.css";
 
 @font-face {
     font-display: swap;
@@ -20,11 +20,11 @@
     font-family: "BrownStdLight";
     src: local("BrownStdLight"), url(./assets/fonts/brownstd-cufonfonts/BrownStdLight.otf) format("truetype");
 }
-// @font-face {
-//     font-display: swap;
-//     font-family: "BrownStdThin";
-//     src: local("BrownStdThin"), url(./assets/fonts/brownstd-cufonfonts/BrownStdThin.otf) format("truetype");
-// }
+@font-face {
+    font-display: swap;
+    font-family: "BrownStdThin";
+    src: local("BrownStdThin"), url(./assets/fonts/brownstd-cufonfonts/BrownStdThin.otf) format("truetype");
+}
 @font-face {
     font-display: swap;
     font-family: "BrownStdRegular";
@@ -96,3 +96,6 @@ body .slick-next {
     }
 }
 
+.modal-backdrop{
+    z-index: 2 !important;
+}

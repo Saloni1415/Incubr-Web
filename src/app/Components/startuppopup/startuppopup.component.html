@@ -1,0 +1,93 @@
+  <div class="modal fade" id="startupModal" tabindex="-1" role="dialog" aria-labelledby="startupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body modal90">
+
+          <div  style="margin-left: 1.5vw;margin-top: 1.5vw"
+          class="d-flex justify-content-between align-items-center position-relative z5">
+            <div>
+                <div  style="background: white;padding: 4px 10px;color: black;">
+                    <div class="Dosis" style="font-weight: bold;font-size: 45px;line-height: 45px;">incubr</div>
+                </div>
+            </div>
+              <div>
+                  <img src="../../../assets/inc/menu.png" width="57" height="57">
+              </div>
+          </div>
+
+          <div style="margin-right: 6vw;height: calc(100% - 143px);">
+            <div class="d-flex justify-content-end">
+              <div class="corporationstxt">
+                start ups
+              </div>
+            </div>
+            <div class="d-flex justify-content-end h-100">
+              <div class="d-flex align-items-end">
+                <div class="sidetxt">
+                  WE WORK WITH STARTUPS AT VARIOUS STAGES 
+                  AND BRING GROWTH TO YOU AT EVERY STAGE
+                </div>
+              </div>
+
+              <div class="boxescontainer p-3">
+                <div class="row position-relative">
+                  <div class="position-absolute lighttext">
+                    PLAN
+                  </div>
+                  <div class="col-3 mt-4" *ngFor="let item of [0,1,2,3]">
+                    <div class="frame">
+                      <div class="d-flex h-100 align-items-end justify-content-end w-100">
+                        <div class="p-3 text-white BrownStdBold text-end">
+                          plan {{item+1}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row position-relative">
+                  <div class="position-absolute lighttext" style="left: 10%;">
+                    BUILD
+                  </div>
+                  <div class="col-3 mt-4" *ngFor="let item of [0,1,2,3]">
+                    <div class="frame">
+                      <div class="d-flex h-100 align-items-end w-100 justify-content-end">
+                        <div class="p-3 text-white BrownStdBold text-end">
+                          build {{item+1}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row position-relative">
+                  <div class="position-absolute lighttext">
+                    SCALE
+                  </div>
+                  <div class="col-3 mt-4 mb-4" *ngFor="let item of [0,1,2,3]">
+                    <div class="frame" *ngIf="item!=3">
+                      <div class="d-flex h-100 align-items-end w-100 justify-content-end">
+                        <div class="p-3 text-white BrownStdBold text-end">
+                          scale {{item+1}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="frame bg-white" *ngIf="item==3">
+                      <div class="d-flex h-100 align-items-end">
+                        <div class="p-3 BrownStdBold" style="color:black">
+                          Ad strategy
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  

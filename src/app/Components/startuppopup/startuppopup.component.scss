@@ -1,0 +1,57 @@
+.modal90{
+    max-height: 90vh !important;
+    max-width: 90vw !important;
+    height: 90vh !important;
+    width: 90vw !important;
+    background: black;
+    overflow: auto;
+}
+.modal-dialog{
+    width: 90vw !important;
+    height: 90vh !important;
+    max-width: 90vw !important;
+    z-index: 15;
+    position: relative;
+
+}
+
+.modal{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    padding: 0px !important;
+}
+.corporationstxt{
+    color: #FFFFFF;
+    font-family: "BrownStdBold";
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    padding: 1vw 1vw 0vw 1vw; 
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+.boxescontainer{
+    width: 55%;
+}
+
+.sidetxt{
+    color: white;
+    font-family: "BrownStdBold";
+    font-size: 2vw;
+    line-height: 2vw;
+    max-width: 20.2vw;
+    text-align: right;
+    margin-right: 4vw;
+}
+.frame{
+    border:1px solid #FFFFFF;
+    height: 10vw;
+    text-align: right;
+}
+.lighttext{
+    font-family: BrownStdThin;
+    color: #747272;
+    font-size: 4vw;
+    left: 38%;
+    top: 12%;
+}
