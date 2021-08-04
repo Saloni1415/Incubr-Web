@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
 declare var $:any;
 @Component({
   selector: 'app-section2',
@@ -6,12 +6,16 @@ declare var $:any;
   styleUrls: ['./section2.component.scss']
 })
 export class Section2Component implements OnInit {
+  //@ts-ignore
+  @ViewChild('rocketbvideo') rocketbvideo:ElementRef;
 
   constructor() { }
 
   ngOnInit(): void {
   }
   ngAfterViewInit(){
+    this.rocketbvideo.nativeElement.muted = true 
+    this.rocketbvideo.nativeElement.play()
     //@ts-ignore
     var parallaxController = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 

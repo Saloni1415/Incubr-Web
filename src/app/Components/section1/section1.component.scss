@@ -1,5 +1,5 @@
 .mesh1{
-    background:url(../../../assets/inc/mesh2-.png);
+    background:url(../../../assets/inc/mesh.png);
     width: 50%;
     height: 80vh;
     background-repeat: no-repeat;
@@ -7,6 +7,7 @@
     background-size: cover;
     position: relative;
     z-index: -1;
+    top: -62px;
 }
 
 .section1{
@@ -18,12 +19,14 @@
     margin-top: 65px;
     width: 37% !important;
     // max-width: 569px;
-    background-color: #ff0000;
+    background-color: #ffffff;
     // height: 200px;
     height: fit-content;
     position: relative;
-    left:-11.5vw;
+    left:-8.5vw;
     z-index: 3;
+    top:-6vw;
+    border: 1px solid black;
 }
 
 .horizontal_line_container{
@@ -88,7 +91,7 @@
   //SPOTLIGHT EFFECT
 
 .bg-text {
-  color: white;
+  color: red;
   background-color: #ffffff;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0); /* Black w/opacity/see-through */
@@ -122,12 +125,12 @@
 
 //GLITCH
 
-$primaryColor: #fff;
+$primaryColor: red;
 $secondaryColor: #333;
 $steps: 20;
 
 .glitch {
-  background-color: #ffffff;
+  background-color: red;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0); /* Black w/opacity/see-through */
   font-weight: 900;
@@ -143,7 +146,7 @@ $steps: 20;
     margin: 0 auto;
     color: $primaryColor;
     // font-weight: 600;
-    text-align: center;
+    text-align: left;
     // text-transform: uppercase;
     // letter-spacing: 0.01em;
     transform: scale3d(1,1,1);
@@ -166,7 +169,7 @@ $steps: 20;
         font-size: 20pt;
         width: fit-content;
         padding: 20px;
-        text-align: center;
+        text-align: left;
         font-family: BrownStdBold;
         line-height: initial;
 

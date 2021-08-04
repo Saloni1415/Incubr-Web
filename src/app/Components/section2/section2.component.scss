@@ -9,7 +9,7 @@
 
 .startup_pos{
     top: 20vh;
-    left: 62vh;
+    left: 29vw;
 }
 
 .parallax {
@@ -67,11 +67,11 @@
   overflow: hidden;
   div:nth-child(1) {
     // transform: translateX(-297%);
-      animation: animate 10s linear infinite;
+      animation: animate 20s linear infinite;
   }
   div:nth-child(2) {
     // transform: translateX(-197%);
-      animation: animate10 10s linear infinite;
+      animation: animate10 20s linear infinite;
   }
 }
 }
