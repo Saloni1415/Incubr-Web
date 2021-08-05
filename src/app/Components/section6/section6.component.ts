@@ -23,9 +23,9 @@ export class Section6Component implements OnInit {
         document.getElementById('insta')?.setAttribute('src','../../../assets/incubrassets/insta.png')
         document.getElementById('linkedin')?.setAttribute('src','../../../assets/incubrassets/linked.png')
       }else{
-        document.getElementById('whatsapp')?.setAttribute('src','../../../assets/inc/whatsapp.png')
-        document.getElementById('insta')?.setAttribute('src','../../../assets/inc/insta.png')
-        document.getElementById('linkedin')?.setAttribute('src','../../../assets/inc/linked.png')
+        document.getElementById('whatsapp')?.setAttribute('src','../../../assets/inc/logos/logoo.png')
+        document.getElementById('insta')?.setAttribute('src','../../../assets/inc/logos/logoo1.png')
+        document.getElementById('linkedin')?.setAttribute('src','../../../assets/inc/logos/logoo2.png')
       }
     });
     let target:any = document.querySelector('#redframe');
