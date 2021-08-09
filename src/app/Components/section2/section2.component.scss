@@ -63,24 +63,24 @@
 }
 .scroll {
   display: flex;
-  width: 100vw;
+  width: 200vw;
   overflow: hidden;
   div:nth-child(1) {
-    // transform: translateX(-297%);
+    // transform: translateX(113%);
       animation: animate 20s linear infinite;
   }
   div:nth-child(2) {
-    // transform: translateX(-197%);
-      animation: animate10 20s linear infinite;
+    transform: translateX(-80%);
+      // animation: animate10 20s linear infinite;
   }
 }
 }
 @keyframes animate {
   from {
-    transform: translateX(240%);
+    transform: translateX(113%);
   }
   to {
-    transform: translateX(-450%);
+    transform: translateX(-100%);
   }
 }
 @keyframes animate10 {
