@@ -19,9 +19,9 @@ export class Section6Component implements OnInit {
     }
     let observer = new IntersectionObserver((e:any)=>{
       if(e[0].isIntersecting){
-        document.getElementById('whatsapp')?.setAttribute('src','../../../assets/incubrassets/wp.png')
-        document.getElementById('insta')?.setAttribute('src','../../../assets/incubrassets/insta.png')
-        document.getElementById('linkedin')?.setAttribute('src','../../../assets/incubrassets/linked.png')
+        document.getElementById('whatsapp')?.setAttribute('src','../../../assets/inc/logos/black/wp.png')
+        document.getElementById('insta')?.setAttribute('src','../../../assets/inc/logos/black/insta.png')
+        document.getElementById('linkedin')?.setAttribute('src','../../../assets/inc/logos/black/linked.png')
       }else{
         document.getElementById('whatsapp')?.setAttribute('src','../../../assets/inc/logos/logoo2.png')
         document.getElementById('insta')?.setAttribute('src','../../../assets/inc/logos/logoo1.png')
