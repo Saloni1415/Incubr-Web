@@ -69,18 +69,27 @@
   
 body .slick-prev, 
 body .slick-next {
-    height: 45px;
+    height: 45px;.slick-dots li button:before {
     width: 40px;
     background: grey !important;
     z-index: 100;
 }
+}
 
 .slick-dots li button:before{
     color: white !important;
+    border: black 1px solid;
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+    line-height: 26px !important;
 }
-
+.slick-dots li{
+    width: 10px !important;
+    height: 10px !important;
+}
 .client_carousel .slick-dots {
-    left: -16vw !important ;
+    // left: -16vw !important ;
 }
 
 
