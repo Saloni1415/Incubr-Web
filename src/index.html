@@ -9,7 +9,14 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<script>
+  window.onload = function(){
+    document.getElementById('loader').style.display = 'none'
+    document.getElementById('body').style.overflow = 'auto'
+  }
+</script>
+<body id="body" style="overflow: hidden;">
+  <video preload="true" autoplay loop muted id="loader" style="position: fixed;height: 100vh;width: 100vw;z-index: 1000;background: black;top: 0%;left: 0%;" src="./assets/videos/loader.mp4"></video>
   <app-root></app-root>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
