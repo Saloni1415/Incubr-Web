@@ -31,19 +31,11 @@
 
               <div class="boxescontainer p-3">
                 <div class="row">
-                  <div class="col-3 mt-4" *ngFor="let item of [0,1,2,3,4,5,6,7]">
-                    <div class="frame" *ngIf="item!=7">
+                  <div class="col-3 mt-4" *ngFor="let item of ['Landscape research','User experience deep dive','New Growth Canvas','New products and Technology','Cross Domain Synergies','Growth Marketing','Resources & alliances','New Value Proposition']">
+                    <div class="frame bg-white">
                       <div class="d-flex h-100 align-items-end">
-                        <div class="p-3 text-white BrownStdBold">
-                          step {{item+1}}
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="frame bg-white" *ngIf="item==7">
-                      <div class="d-flex h-100 align-items-end">
-                        <div class="p-3 BrownStdBold" style="color:black">
-                          New Value Proposition
+                        <div class="BrownStdBold" style="color:black;margin-left: 5px;margin-bottom: 10px;">
+                          {{item}}
                         </div>
                       </div>
                     </div>

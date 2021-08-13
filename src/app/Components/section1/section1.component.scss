@@ -178,13 +178,13 @@ $steps: 20;
     &::before {
         left: 1px;
         text-shadow: 1px 0 green;
-        animation: glitch-effect 3s infinite linear alternate-reverse;
+        animation: glitch-effect 5s infinite linear alternate-reverse;
     }
 
     &::after {
         left: 3px;
         text-shadow: -1px 0 red;
-        animation: glitch-effect 2s infinite linear alternate-reverse;
+        animation: glitch-effect 4s infinite linear alternate-reverse;
     }
 }
 

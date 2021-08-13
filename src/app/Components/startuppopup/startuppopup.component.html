@@ -35,11 +35,13 @@
                   <div class="position-absolute lighttext">
                     PLAN
                   </div>
-                  <div class="col-3 mt-4" *ngFor="let item of [0,1,2,3]">
+                  <div class="col-3 mt-4" *ngFor="let item of ['Creating the brand','Positioning & Personality','Problem validation & supporting the fit','Compelling stories']">
                     <div class="frame">
-                      <div class="d-flex h-100 align-items-end justify-content-end w-100">
-                        <div class="p-3 text-white BrownStdBold text-end">
-                          plan {{item+1}}
+                      <div class="frame bg-white">
+                        <div class="d-flex h-100 align-items-end">
+                          <div class="BrownStdBold" style="color:black;padding-left: 5px;padding-bottom: 10px;">
+                            {{item}}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -50,11 +52,13 @@
                   <div class="position-absolute lighttext" style="left: 10%;">
                     BUILD
                   </div>
-                  <div class="col-3 mt-4" *ngFor="let item of [0,1,2,3]">
+                  <div class="col-3 mt-4" *ngFor="let item of ['Sales enablement','Growth marketing plan','UX/UI-experience design','Designing for conversion']">
                     <div class="frame">
-                      <div class="d-flex h-100 align-items-end w-100 justify-content-end">
-                        <div class="p-3 text-white BrownStdBold text-end">
-                          build {{item+1}}
+                      <div class="frame bg-white">
+                        <div class="d-flex h-100 align-items-end">
+                          <div class="BrownStdBold" style="color:black;padding-left: 5px;padding-bottom: 10px;">
+                            {{item}}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -65,18 +69,11 @@
                   <div class="position-absolute lighttext">
                     SCALE
                   </div>
-                  <div class="col-3 mt-4 mb-4" *ngFor="let item of [0,1,2,3]">
-                    <div class="frame" *ngIf="item!=3">
-                      <div class="d-flex h-100 align-items-end w-100 justify-content-end">
-                        <div class="p-3 text-white BrownStdBold text-end">
-                          scale {{item+1}}
-                        </div>
-                      </div>
-                    </div>
-                    <div class="frame bg-white" *ngIf="item==3">
+                  <div class="col-3 mt-4 mb-4" *ngFor="let item of ['New Product Development','Omni Channel Scaling','Resources And Aliances','Ad strategy']">
+                    <div class="frame bg-white">
                       <div class="d-flex h-100 align-items-end">
-                        <div class="p-3 BrownStdBold" style="color:black">
-                          Ad strategy
+                        <div class="BrownStdBold" style="color:black;padding-left: 5px;padding-bottom: 10px;">
+                          {{item}}
                         </div>
                       </div>
                     </div>
