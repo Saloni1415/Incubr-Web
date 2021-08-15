@@ -17,6 +17,7 @@ export class Section4Component implements OnInit {
       if(e[0].isIntersecting && !e[0].target.className.includes('overlaymoveanim')){
         e[0].target.className = e[0].target.className+' overlaymoveanim' 
       }
+      
       // else{
       //   e[0].target.className = e[0].target.className.replace('overlaymoveanim','')
       // }
