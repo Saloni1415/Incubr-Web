@@ -43,7 +43,9 @@ export class Section1Component implements OnInit {
   
   onMoseMove(e:any) {
       var elem:any = document.getElementById('spotlight')
-      elem.style.backgroundImage  = '-webkit-radial-gradient(' + e.offsetX + 'px ' + e.offsetY + 'px, circle cover, rgba(0,0,0,0.2) 15%, red 25%)';
+      if(elem){
+        elem.style.backgroundImage  = '-webkit-radial-gradient(' + e.offsetX + 'px ' + e.offsetY + 'px, circle cover, rgba(0,0,0,0.2) 15%, red 25%)';
+      }
   }
 
 

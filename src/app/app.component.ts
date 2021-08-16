@@ -16,7 +16,7 @@ export class AppComponent {
       //@ts-ignore'
         $(this).scrollTop(0,0);
       //@ts-ignore'
-          Scrollbar.init(document.querySelector('#my-scrollbar'),{renderByPixels:true});
+          // Scrollbar.init(document.querySelector('#my-scrollbar'),{renderByPixels:true});
       });
   };
 }
