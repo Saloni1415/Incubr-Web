@@ -21,7 +21,7 @@
                         {{item.title}}
                     </div>
                     <div class="card_subtitle mt-5">
-                        {{item.body}}
+                        {{limitWords(item.body,50,'')}}
                     </div>
                     <div class="card_subtitle text-start mt-4">
                         {{item.created_at | date}}

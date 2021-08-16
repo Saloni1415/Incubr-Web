@@ -13,4 +13,10 @@ export class BlogsComponent implements OnInit {
   async ngOnInit() {
     this.logslist = await this.data.getBlogs()
   }
+
+  limitWords(str:any, max:any, suffix:any) {
+    let strArr = str.split(" ")
+    strArr.length = max
+    return strArr.join(" ")
+  }
 }

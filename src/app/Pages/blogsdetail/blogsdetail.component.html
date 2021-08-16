@@ -10,12 +10,11 @@
 
     <div class="card_subtitle mt-3">{{blogdetail.created_at | date}}</div>
 
-    <!-- <div class="detail_subtext mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    <div class="detail_subtext mt-5">
+        {{blogdetail.body}}
     </div>
 
-    <div class="card_subtitle mt-5">
+    <!-- <div class="card_subtitle mt-5">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -35,15 +34,10 @@
 
     <img class="w-100 imagefull mt-5" src="{{(blogdetail.images?.length>1)?blogdetail.images[1]?.image:''}}" alt="">
 
-    <!-- <div class="card_subtitle mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-    </div>
     <div class="card_subtitle mt-5">
+        {{blogdetail.body2}}
+    </div>
+    <!-- <div class="card_subtitle mt-5">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
