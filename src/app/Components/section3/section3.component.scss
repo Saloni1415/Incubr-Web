@@ -63,3 +63,33 @@
     height: 3px;
     width: 100%;
 }
+
+.clientspng{
+  height: 80vh;
+  width: 69.6vw;
+}
+
+@media screen and (max-width: 1100px) {
+  .clientspng{
+    width: 100vw;
+    height: 36vh;
+  }
+  .logobrandspng{
+    width: 100vw !important;
+  }
+}
+
+.logobrandspng{
+  width: 69.6vw;
+  background: white;
+}
+
+
+.carousel_text_mobile{
+  width: 90%;
+  color: red;
+  font-size: 3vw;
+  text-align: center;
+  font-family: BrownStdBold;
+  background: transparent;
+}

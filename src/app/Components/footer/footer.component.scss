@@ -5,7 +5,7 @@
 }
 .footer .text{
     color: white;
-    font-size: 12px;
+    font-size: 1vw;
     text-align: right;
     font-family: "LeagueSpartan";
     width: max-content;
@@ -25,8 +25,25 @@
 .footerspan{
     font-family: BrownStdLight,BrownStdBold,AdobeInvisFont,MyriadPro-Regular;
     color: #FFFFFF;
-    font-size: 15px;
+    font-size: 1vw;
     line-height: 29px;  
     text-align: left;
     width: 19vw;
+}
+.footer_txt{
+    font-size: 3vw;
+}
+.copyright{
+    font-size: 1vw;
+}
+@media screen and (max-width: 600px) {
+    .footer .text{
+        font-size: 3vw;
+    }
+    .footer_txt{
+        font-size: 6vw;
+    }
+    .copyright{
+        font-size: 3vw;
+    }
 }

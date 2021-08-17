@@ -47,3 +47,62 @@
     border:1px solid #FFFFFF;
     height: 10vw;
 }
+
+
+
+@media screen and (max-width: 1100px) {
+    .boxescontainer{
+        width: 100%;
+    }
+    .frame{
+        height: 100%;
+        font-size: 1.5vw;
+        line-height: 1.5vw;
+        min-height: 100px;
+        word-wrap: break-word;
+    }
+    .frame div div{
+        // padding: 10px;
+        min-width: 50px;
+        word-wrap: break-word;
+    }
+    .col-3{
+        padding: 3px;
+    }
+
+    .cont{
+        margin-right: 0vw !important;
+    }
+}
+
+.cont{
+    margin-right: 6vw;
+    height: calc(100% - 143px);
+}
+
+@media screen and (max-width: 600px) {
+    .modal90{
+        padding: 4px !important;
+    }
+    .frame{
+        height: 100%;
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    .logo_{
+        width: 20vw !important;
+    }
+    .corporationstxt{
+        font-size: 6vw !important;
+        line-height: 6vw !important;
+    }
+    .sidetxt{
+        font-size: 3vw;
+        line-height: 3vw;
+        max-width: 30.2vw;
+    }
+}
+
+.logo_{
+    width: 13vw;
+}

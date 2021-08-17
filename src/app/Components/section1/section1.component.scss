@@ -12,6 +12,7 @@
 
 .section1{
     top: -99px;
+    height: calc(100vh - 32px);
     // z-index: 4;
 }
 
@@ -193,5 +194,96 @@ $steps: 20;
         #{percentage($i*(1/$steps))}{
             clip:rect(random(230)+px,9999px,random(230)+px,0);
         }
+    }
+}
+
+.hellovideo{
+    height: 88vh;
+    position: absolute;
+    z-index: 2;
+    top: 7vh;
+    left: 100px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1100px) {
+    .top_cont{
+        display: block !important;
+    }
+
+    .hellovideo {
+      height: auto !important;
+      width: 100vw;
+      left: 0;
+      position: static;
+    }
+
+    .mesh1{
+        background:url(../../../assets/inc/mesh.png);
+        width: 100%;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: -1;
+        top: -62px;
+    }
+
+    .redrect{
+        width: 70% !important;
+        border: none;
+        margin: auto;
+        left: 0;
+    }
+
+    .bg-text {
+        color: black;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0); /* Black w/opacity/see-through */
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    .glitch {
+        background-color: white;
+        font-weight: 900;
+        font-size: 50px;
+        color: black;
+          &::before,
+          &::after {
+              color: black;
+              font-weight: 900;
+              font-size: 50px;
+      
+          }
+      }
+
+    .section1{
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bg-text {
+        color: black;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0); /* Black w/opacity/see-through */
+        font-weight: 900;
+        font-size: 30px !important;
+    }
+
+    .glitch {
+        background-color: white;
+        font-weight: 900;
+        font-size: 30px !important;
+        color: black;
+          &::before,
+          &::after {
+              color: black;
+              font-weight: 900;
+              font-size: 30px !important;
+      
+          }
     }
 }

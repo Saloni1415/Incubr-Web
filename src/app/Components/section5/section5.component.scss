@@ -27,3 +27,28 @@
     font-family: BrownStdBold;
     text-decoration: underline;
 }
+
+.blog_frame_mobile{
+    width: 100%;
+    height: auto;
+    border: 1px solid #C4C4C4;
+    background: #C4C4C4;
+}
+
+.blog_text_mobile{
+    color: black;
+    font-size: 4vw;
+    line-height: 4.3vw;
+    text-align: center;
+    font-family: BrownStdBold;
+    font-weight: 800;
+
+}
+
+.client_text_mobile{
+    margin-top: 1vw !important;
+    font-size: 9vw;
+    line-height: 9vw;
+    color: white;
+    font-family: BrownStdBold;
+}

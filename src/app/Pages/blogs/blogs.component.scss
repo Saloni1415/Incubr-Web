@@ -42,3 +42,22 @@
     z-index: 2;
     background-color: white ;
 }
+
+.img{
+    width: 30vw;
+    min-height: 400px;
+}
+
+@media screen and (max-width: 770px) {
+    .img{
+        width: 100%;
+        min-height: 200px;
+    }   
+
+    .detail_text{
+        font-size: 23px;
+        line-height: 26px;
+        margin-bottom: 18px;
+    }
+    
+}

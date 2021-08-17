@@ -93,6 +93,21 @@ body .slick-next {
 }
 
 
+@media screen and (max-width: 600px) {
+    .slick-dots li button:before{
+        color: white !important;
+        border: black 1px solid;
+        border-radius: 50%;
+        width: 7px !important;
+        height: 7px !important;
+        line-height: 33px !important;
+    }
+    .slick-dots li{
+        width: 7px !important;
+        height: 7px !important;
+    }
+}
+
 .rotate{
     animation: rotate 40s infinite linear;
 }
@@ -126,4 +141,42 @@ html, body {
 
 *{
     scroll-behavior: smooth;
+}
+
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .mobile{
+        display: block !important;
+    }
+}
+
+.mobile-flex{
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+    .mobile-flex{
+        display: flex;
+    }
+}
+
+.desktop{
+    display: block;
+}
+@media screen and (max-width: 1100px) {
+    .desktop{
+        display: none !important;
+    }
+}
+
+.desktop-flex{
+    display: flex;
+}
+@media screen and (max-width: 1100px) {
+    .desktop-flex{
+        display: none !important;
+    }
 }

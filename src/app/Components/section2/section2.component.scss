@@ -57,23 +57,23 @@
 
 .first{
   //MOVING BOARD BRANDS
-.banner_container{
-  width: 100%;
-  overflow: hidden;
-}
-.scroll {
-  display: flex;
-  width: 200vw;
-  overflow: hidden;
-  div:nth-child(1) {
-    // transform: translateX(113%);
-      animation: animate 20s linear infinite;
+  .banner_container{
+    width: 100%;
+    overflow: hidden;
   }
-  div:nth-child(2) {
-    transform: translateX(-80%);
-      // animation: animate10 20s linear infinite;
+  .scroll {
+    display: flex;
+    width: 200vw;
+    overflow: hidden;
+    div:nth-child(1) {
+      // transform: translateX(113%);
+        animation: animate 20s linear infinite;
+    }
+    div:nth-child(2) {
+      transform: translateX(-80%);
+        // animation: animate10 20s linear infinite;
+    }
   }
-}
 }
 @keyframes animate {
   from {
@@ -96,4 +96,23 @@
     background-color: #020024;
     height: 3px;
     width: 100%;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .first{
+    .scroll {
+      display: flex;
+      width: max-content;
+      overflow: hidden;
+      div:nth-child(1) {
+        // transform: translateX(113%);
+          animation: animate 20s linear infinite;
+      }
+      div:nth-child(2) {
+        transform: translateX(-80%);
+          // animation: animate10 20s linear infinite;
+      }
+    }
+  }
 }

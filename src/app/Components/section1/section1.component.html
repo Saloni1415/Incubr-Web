@@ -1,30 +1,30 @@
-    <section class="position-relative section1 w-100" style="height: calc(100vh - 32px);">
-        <!-- <div class="horizontal_line_container">
-            <div class="horizontal_line"></div>
-        </div> -->
-        <!-- <div class="vertical_line_container">
-            <div class="vertical_bal" id="draggable-div"
-            (mousedown)="onGrab()" (mouseup)="onLetGo()" (mouseout)="onLetGo()"></div>
-            <div class="vertical_bal" id="draggable-div"></div>
-            <div class="vertical_line"></div>
-        </div> -->
-        <div class="d-flex position-relative w-100">
-            <video preload="true" autoplay loop muted #Topvideo
-            style="height: 88vh;position: absolute;z-index: 2;top: 7vh;left: 100px;border: 1px solid black;">
-                <source src="../../../assets/videos/topv.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="mesh1"></div>
-            <div class="redrect parallax" data-parallax="0.5">
-                <div class="bg-text glitch" data-text='"Leverage technology and creativity with a great brand story to help you accelerate your growth."'>
-                    "Leverage technology and creativity with a great brand story to help you accelerate your growth."
-                </div>
-                <!-- <div class="spotlight" id="spotlight"></div> -->
+<section class="position-relative section1 w-100">
+    <div class="d-flex top_cont position-relative w-100">
+        <div class="mesh1"></div>
+
+        <!-- DESKTOP -->
+        <div class="redrect parallax desktop" data-parallax="0.5">
+            <div class="bg-text glitch" data-text='"Leverage technology and creativity with a great brand story to help you accelerate your growth."'>
+                "Leverage technology and creativity with a great brand story to help you accelerate your growth."
             </div>
         </div>
-    </section>
 
-<div class="social" id="social">
+        <!-- MOBILE -->
+        <div class="redrect mobile">
+            <div class="bg-text glitch" data-text='"Leverage technology and creativity with a great brand story to help you accelerate your growth."'>
+                "Leverage technology and creativity with a great brand story to help you accelerate your growth."
+            </div>
+        </div>
+
+
+        <video preload="true" autoplay loop muted #Topvideo class="hellovideo">
+            <source src="../../../assets/videos/topv.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>  
+
+<div class="social desktop" id="social">
     <div>
         <img src="../../../assets/inc/logos/logoo2.png" id="whatsapp" width="47" height="47">
     </div>
