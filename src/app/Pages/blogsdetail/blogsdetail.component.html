@@ -4,7 +4,7 @@
         {{blogdetail.title}}
     </div>
 
-    <img class="w-100 imagefull mt-5" src="{{(blogdetail.images?.length>0)?blogdetail.images[0]?.image:''}}" alt="">
+    <img class="w-100 imagefull mt-5" src="http://143.110.180.129{{(blogdetail.images?.length>0)?blogdetail.images[0]?.image:''}}" alt="">
 
     <hr class="mt-5">
 
@@ -57,7 +57,7 @@
         <div class="col-12 col-md-6" *ngFor="let item of blogslist">
             <div class="card_ mt-3" style="cursor: pointer;" routerLink="/blog/{{item.id}}">
                 <div>
-                    <img src="{{(item.images.length>0)?item.images[0]?.image:''}}" alt="" width="100%" height="280px">
+                    <img src="http://143.110.180.129{{(item.images.length>0)?item.images[0]?.image:''}}" alt="" width="100%" height="280px">
                 </div>
                 <div class="p-1 p-md-3">
                     <div class="card_title text-center">
