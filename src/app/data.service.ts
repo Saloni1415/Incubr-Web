@@ -8,7 +8,6 @@ export class DataService {
   blogslist :any= []
   ismenu = false
   constructor(public http:HttpClient) {
-    this.getBlogs()
   }
   public async getBlogs(){
     // let id  = this.router.
