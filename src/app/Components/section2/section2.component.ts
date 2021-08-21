@@ -8,6 +8,8 @@ declare var $:any;
 export class Section2Component implements OnInit {
   //@ts-ignore
   @ViewChild('rocketbvideo') rocketbvideo:ElementRef;
+  //@ts-ignore
+  @ViewChild('rocketbvideo1') rocketbvideo1:ElementRef;
 
   constructor() { }
 
@@ -16,6 +18,9 @@ export class Section2Component implements OnInit {
   ngAfterViewInit(){
     this.rocketbvideo.nativeElement.muted = true 
     this.rocketbvideo.nativeElement.play()
+
+    this.rocketbvideo1.nativeElement.muted = true 
+    this.rocketbvideo1.nativeElement.play()
     //@ts-ignore
     var parallaxController = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
