@@ -126,12 +126,12 @@
 
 //GLITCH
 
-$primaryColor: red;
+$primaryColor: #242121;
 $secondaryColor: #333;
 $steps: 20;
 
 .glitch {
-  background-color: red;
+//   background-color: red;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0); /* Black w/opacity/see-through */
   font-weight: 900;
