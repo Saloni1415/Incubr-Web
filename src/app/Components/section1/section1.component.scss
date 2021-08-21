@@ -1,5 +1,5 @@
 .mesh1{
-    background:url(../../../assets/inc/mesh.png);
+    // background:url(../../../assets/inc/mesh.png);
     width: 50%;
     height: 80vh;
     background-repeat: no-repeat;
@@ -76,7 +76,8 @@
 
 .social{
     position: fixed;
-    right: 40px;
+    // right: 40px;
+    right: 4.8vw;
     top: calc((100% - 150px) / 2 );
     z-index: 10;
 }
