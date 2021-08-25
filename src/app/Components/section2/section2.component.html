@@ -12,10 +12,11 @@
     </div>
     
     
-    <div class="position-relative" style="z-index: 3;" style="max-width: 100vw;">
+    <div class="position-relative" style="z-index: 3;" style="max-width: 100vw;" >
         <div style="height: 10vh;"></div>
         <div class="d-flex justify-content-between" style="z-index:3;position: relative;">
-            <div>
+            <div >
+                <div class="position-absolute" style="top:8vw" id="startup"></div>
                 <video playsinline preload="true" class="wevideo" autoplay loop muted #rocketbvideo> 
                     <source src="../../../assets/videos/rocket_3.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -29,13 +30,13 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center">
-                                <div data-toggle="modal" data-target="#startupModal" style="background: black;padding-top: 1vw;display: block;width: fit-content;cursor: pointer;" class="px-2">
+                                <div data-toggle="modal" data-target="#startupModal" style="background: black;padding-top: 1vw;display: block;width: fit-content;cursor: pointer;" class="px-2" id="startupopen">
                                     <span class="rocket_text">START UPS</span> 
                                 </div>
                                 <div class="rocket_text" style="font-family:BrownStdBold;margin-left: 3vw;">&</div>
                             </div>
     
-                            <div data-toggle="modal" data-target="#corporationModal" style="background: black;padding-top: 1vw;display: inline-block;cursor:pointer;margin-top: 2vw;" class="px-2 position-relative">
+                            <div data-toggle="modal" data-target="#corporationModal" style="background: black;padding-top: 1vw;display: inline-block;cursor:pointer;margin-top: 2vw;" class="px-2 position-relative" id="coropen">
                                 <span class="rocket_text">CORPORATIONS</span>
                             </div>
                         </div>
@@ -66,7 +67,7 @@
     
     
         <div class="position-absolute" style="top:35vw;z-index: 2;width: 100%;">
-            <img src="../../../assets/inc/mesh.png"  style="height: 70vw;margin-left: 10vw;margin-right: 10vw;width: 80vw;"> 
+            <img src="../../../assets/inc/meshbot.png"  style="height: 70vw;margin-left: 10vw;margin-right: 10vw;width: 80vw;"> 
             <div style="height:426px;width: 100%;" class="second">
     
                     <!-- <div class="scroll text4 w-100 mt-5" style="overflow:hidden;">
@@ -150,7 +151,7 @@
         </div>
         
         <div class="position-absolute" style="top:35vw;z-index: 2;width: 100%;">
-            <img src="../../../assets/inc/mesh.png"  style="height: 70vw;margin-left: 10vw;margin-right: 10vw;width: 80vw;"> 
+            <img src="../../../assets/inc/meshbot.png"  style="height: 70vw;margin-left: 10vw;margin-right: 10vw;width: 80vw;"> 
             <div style="height:426px;width: 100%;" class="second">
             </div>
         </div>

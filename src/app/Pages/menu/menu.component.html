@@ -19,7 +19,7 @@
     <div style="z-index: 1;position: relative;top:-1.5vh" class="d-flex justify-content-around">
         <div style="margin-top:3vh;">
             <div *ngFor="let item of items">
-                <div class="sidetext">
+                <div class="sidetext" style="cursor: pointer;" (click)="navigate(item)">
                     {{item}}
                 </div>
             </div>
