@@ -1,9 +1,8 @@
 .detail_text{
-    font-size: 33px;
-    line-height: 46px;
+    font-size: 3.2vw;
     color: #020025;
     font-weight: 300;
-    font-family: "BrownStdBold";
+    font-family: "DosisBold";
 }
 
 .card_{
@@ -13,35 +12,17 @@
 }
 
 .card_title{
-    font-family: BrownStdBold;
-    font-size: 23px;
-    text-align: left;
+    font-family: BrownStdBold;font-size: 2vw;
 }
 .card_subtitle{
-    font-family: BrownStdRegular;
-    font-size: 17px;
-    color: black;
-    text-align: left;
+    font-family: BrownStd;font-size: 1.2vw;margin-top: 2.8vw;
+    margin-bottom: 2vw;
+    height: 10vw;
+}
+.datetext{
+    margin-top: auto;
 }
 
-.side_hr{
-    // height: 100%;
-    width: 1px;
-    margin-right: 50px;
-    background-color: black;
-}
-.bulb{
-    border: black 1px solid;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 50%;
-    left: -14px;
-    z-index: 2;
-    background-color: white ;
-}
 
 .img{
     width: 30vw;
@@ -60,4 +41,28 @@
         margin-bottom: 18px;
     }
     
+}
+
+
+
+@media screen and (max-width: 770px) {
+    .card_title{
+        font-size: 4.5vw;
+    }
+    .card_subtitle{
+        margin-top: 3.2vw;
+        font-size: 3.8vw;
+        height: 43vw;
+    }
+    .datetext{
+        margin-top: 3.2vw;
+        font-size: 3.8vw;
+    }
+    .headertitle{
+        font-size: 5.8vw !important;
+    }
+}
+
+.headertitle{
+    font-family:DosisBold;font-size: 2.7vw;
 }

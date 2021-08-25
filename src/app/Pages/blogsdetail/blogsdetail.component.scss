@@ -1,54 +1,71 @@
-.detail_text{
-    font-size: 35px;
-    line-height: 46px;
-    color: #020025;
-    font-weight: 300;
-    font-family: "BrownStdBold";
-}
-.detail_subtext{
-    line-height: 30px;
-    color: #020025;
-    font-weight: 300;
-    font-family: "BrownStdBold";
-    font-size: 28px;
+//CHANGE
+.titlecontainer{
+    background: #C4C4C4;
+    color: white;
+    font-family: BrownStdRegular;
+    font-size: 4vw;
 }
 
-.card_{
-    border: 2px solid #000000;
-    overflow: hidden;
-    border-radius: 11px;
+.textcontainer{
+    max-width: 80vw;
+    margin-left: 7vw;
 }
+.datetext{
+    font-family: BrownStdRegular;
+    font-size: 1.6vw;
+    margin-top: 4vw;
+}
+.maintext{
+    font-family: BrownStdLight;
+    font-size: 1.6vw;
+    margin-top: 4vw;
+}
+
 
 .card_title{
-    font-family: BrownStdBold;
-    font-size: 23px;
-    text-align: left;
+    font-family: BrownStdBold;font-size: 2vw;
 }
 .card_subtitle{
-    font-family: BrownStdRegular;
-    font-size: 17px;
-    color: black;
-    text-align: left;
+    font-family: BrownStd;font-size: 1.2vw;margin-top: 2.8vw;
+    margin-bottom: 2vw;
+    height: 10vw;
 }
-.keepreading{
-    font-family: BrownStdRegular;
-    font-size: 27px;
-    color: black;
-    text-align: left;
-}
-
-.imagefull{
-    border-radius: 10px;
-    height: 450px;
+.card_datetext{
+    margin-top: auto;
 }
 
 
+@media screen and (max-width: 770px) {
+    .card_title{
+        font-size: 4.5vw;
+    }
+    .card_subtitle{
+        margin-top: 3.2vw;
+        font-size: 3.8vw;
+        height: 43vw;
+    }
+    .datetext{
+        margin-top: 3.2vw;
+        font-size: 3.8vw;
+    }
+    .headertitle{
+        font-size: 5.8vw !important;
+    }
 
 
 
-@media screen and (max-width: 600px) {
-    .detail_subtext{
-        line-height: 26px !important;
-        font-size: 24px !important;
+    .datetext{
+        font-size: 3vw;
+        margin-top: 4vw;
+    }
+    .maintext{
+        font-size: 3vw;
+        margin-top: 4vw;
+    }
+    .titlecontainer{
+        background: #C4C4C4;
+        color: white;
+        font-family: BrownStdRegular;
+        font-size: 4.5vw;
     }
 }

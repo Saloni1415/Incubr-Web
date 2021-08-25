@@ -13,6 +13,7 @@ export class BlogsdetailComponent implements OnInit {
   blogslist:any=[]
   constructor(public data:DataService,public route:ActivatedRoute) { 
     this.route.paramMap.subscribe((params:any) => {
+      document.getElementById('blogdetailtop')?.scrollIntoView()
       this.getdetail()
     });
   }
@@ -27,5 +28,9 @@ export class BlogsdetailComponent implements OnInit {
     this.blogslist = list.filter((d:any)=>d.id!==id)
     this.blogslist.length = 2
   }
-
+  limitWords(str:any, max:any, suffix:any) {
+    let strArr = str.split(" ")
+    strArr.length = max
+    return strArr.join(" ")
+  }
 }

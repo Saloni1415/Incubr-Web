@@ -5,11 +5,11 @@
     font-family: "Dosis";
     src: local("Dosis"), url(./assets/fonts/Dosis/Dosis-VariableFont_wght.ttf) format("truetype");
 }
-// @font-face {
-//     font-display: swap;
-//     font-family: "Dosis-Bold";
-//     src: local("Dosis-Bold"), url(./assets/fonts/Dosis/static/Dosis-Bold.ttf) format("truetype");
-// }
+@font-face {
+    font-display: swap;
+    font-family: "DosisBold";
+    src: local("DosisBold"), url(./assets/fonts/Dosis/static/Dosis-Bold.ttf) format("truetype");
+}
 @font-face {
     font-display: swap;
     font-family: "BrownStdBold";
