@@ -220,15 +220,15 @@ $white: #fff;
   transform: scale(0.725);
 }
 
-.divider {
-  position: absolute;
-  z-index: 2;
-  top: 65px;
-  left: 200px;
-  width: 50px;
-  height: 15px;
-  background: $black;
-}
+// .divider {
+//   position: absolute;
+//   z-index: 2;
+//   top: 65px;
+//   left: 200px;
+//   width: 50px;
+//   height: 15px;
+//   background: $black;
+// }
 
 .loading-text {
   position: relative;
@@ -350,4 +350,8 @@ $white: #fff;
   #container {
     transform: scale(0.85);
   }
+}
+
+.modal-content {
+  background: black !important;
 }

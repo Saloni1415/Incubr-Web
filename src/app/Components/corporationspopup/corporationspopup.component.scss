@@ -87,7 +87,7 @@
     .frame{
         height: 100%;
         font-size: 3vw;
-        line-height: 3vw;
+        line-height: 4vw;
     }
     .logo_{
         width: 20vw !important;
@@ -100,6 +100,12 @@
         font-size: 3vw;
         line-height: 3vw;
         max-width: 30.2vw;
+    }
+
+    .framebox{
+        padding-left: 0.3vw !important;
+        padding-bottom: 0.1vw !important;
+        max-width: 99% !important;
     }
 }
 
