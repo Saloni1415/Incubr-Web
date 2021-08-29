@@ -9,6 +9,10 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    
+  </style>
 </head>
 <script>
   window.onload = function(){
@@ -17,7 +21,25 @@
   }
 </script>
 <body id="body" style="overflow: hidden;">
-  <video preload="true" playsinline autoplay loop muted id="loader" style="position: fixed;height: 100vh;width: 100vw;z-index: 1000;background: black;top: 0%;left: 0%;" src="./assets/videos/loader.mp4"></video>
+  <div id="loader" style="position: fixed;height: 100vh;width: 100vw;z-index: 1000;background: black;top: 0%;left: 0%;display: flex;justify-content: center;align-items: center;">
+    <div>
+      <div style="display: flex;justify-content: center;">
+        <img src="./assets/ourwork/incuber logo.png" class="image_" style="width: 18vw;margin-bottom: 10vw;">      
+      </div>
+      <div id="container">
+        <div class="divider" aria-hidden="true"></div>
+        <p class="loading-text" aria-label="Loading">
+          <span class="letter" aria-hidden="true">L</span>
+          <span class="letter" aria-hidden="true">o</span>
+          <span class="letter" aria-hidden="true">a</span>
+          <span class="letter" aria-hidden="true">d</span>
+          <span class="letter" aria-hidden="true">i</span>
+          <span class="letter" aria-hidden="true">n</span>
+          <span class="letter" aria-hidden="true">g</span>
+        </p>
+      </div>
+    </div>
+  </div>
   <app-root></app-root>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
