@@ -5,6 +5,8 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
   providedIn: 'root'
 })
 export class DataService {
+  ismobileScreen:any=(window.innerWidth<=1100);
+
   blogslist :any= []
   ismenu = false
   constructor(public http:HttpClient) {

@@ -1,4 +1,4 @@
-<div class="justify-content-between align-items-center mt-5 position-relative z5 desktop-flex" style="padding-right: 3.56vw;padding-left: 3.56vw;">
+<div class="justify-content-between align-items-center mt-5 position-relative z5 desktop-flex" *ngIf="!data.ismobileScreen" style="padding-right: 3.56vw;padding-left: 3.56vw;">
     <div class="mt-3">
             <img src="../../../assets/ourwork/incuber logo.png" alt="" style="width: 18vw;">
     </div>
@@ -6,6 +6,6 @@
         <img src="../../../assets/inc/menu.png" width="57" height="57">
     </div>
 </div>
-<div class="mobile-flex justify-content-center">
+<div class="mobile-flex justify-content-center" *ngIf="data.ismobileScreen">
     <img src="../../../assets/ourwork/incuber logo.png" class="mobilelogo">
 </div>

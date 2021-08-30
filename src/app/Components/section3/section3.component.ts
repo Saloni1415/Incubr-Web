@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from 'src/app/data.service';
 @Component({
   selector: 'app-section3',
   templateUrl: './section3.component.html',
@@ -33,7 +33,7 @@ export class Section3Component implements OnInit {
     console.log('beforeChange');
   }  
 
-  constructor() { }
+  constructor(public data:DataService) { }
 
   ngOnInit(): void { }
   

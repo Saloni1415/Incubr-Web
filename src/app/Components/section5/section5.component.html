@@ -1,5 +1,5 @@
 <!-- <div style="height:calc( 10vh - 365px );"></div> -->
-<div class="desktop">
+<div class="desktop" *ngIf="!data.ismobileScreen">
     <div class="position-relative" style="z-index: 3;margin-top: calc( 10vh - 365px )" id="blogs">
         <div style="background: black;display: inline-block;margin-left: 74px;z-index: 3;" 
             class="px-2 position-relative">
@@ -43,7 +43,7 @@
     </div>  
 </div>
 
-<div class="mobile">
+<div class="mobile" *ngIf="data.ismobileScreen">
     <div class="position-relative" style="z-index: 3;margin-top:calc( 10vh - 85px )">
         <div class="position-relative" style="top:-15px">
             <div class="d-flex justify-content-center">

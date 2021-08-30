@@ -1,4 +1,4 @@
-<div class="desktop">
+<div class="desktop" *ngIf="!data.ismobileScreen">
     <div class="first">
         <div class="banner_container" style="z-index: 1;background: black;">
             <div class="divider mb-2"></div>
@@ -105,7 +105,7 @@
     </div>
 </div>
 
-<div class="mobile">
+<div class="mobile" *ngIf="data.ismobileScreen">
     <div class="first">
         <div class="banner_container" style="z-index: 1;background: black;">
             <div class="divider mb-2"></div>

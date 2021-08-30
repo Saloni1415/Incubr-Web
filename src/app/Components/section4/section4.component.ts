@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from 'src/app/data.service';
 @Component({
   selector: 'app-section4',
   templateUrl: './section4.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Section4Component implements OnInit {
 
-  constructor() { }
+  constructor(public data:DataService) { }
 
   ngOnInit(): void {
     

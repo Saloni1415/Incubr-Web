@@ -1,4 +1,4 @@
-<div class="footer desktop-flex">
+<div class="footer desktop-flex" *ngIf="!data.ismobileScreen">
     <div style="margin-top: 167px;margin-right: 24px;margin-bottom: 153px;
     width: max-content;margin-left: 11.45vw;">
         <div class="text" style="cursor: pointer;" (click)="navigate('Startups')">START UPS</div>
@@ -39,7 +39,7 @@
 </div>
 
 
-<div class="footer mobile-flex justify-content-between pb-4">
+<div class="footer mobile-flex justify-content-between pb-4" *ngIf="data.ismobileScreen">
     <div style="margin-top: 15vw;width: max-content;margin-left: 3vw;">
         <div class="text" style="cursor: pointer;" (click)="navigate('Startups')">START UPS</div>
         <div class="text" style="cursor: pointer;" (click)="navigate('Corporations')">CORPORATION</div>

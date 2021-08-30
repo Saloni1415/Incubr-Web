@@ -9,6 +9,14 @@ declare var $:any;
 export class AppComponent {
   title = 'incubr';
   constructor (public data:DataService){}
+  ngOnInit(){
+    this.data.ismobileScreen = (window.innerWidth<=1100)
+    window.onresize = ()=>{
+      this.data.ismobileScreen = (window.innerWidth<=1100)
+    }
+  }
+
+
   ngAfterViewInit(){
     $(document).ready(function(){
       //@ts-ignore'

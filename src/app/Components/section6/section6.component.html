@@ -1,5 +1,5 @@
 
-<div class="desktop">
+<div class="desktop" *ngIf="!data.ismobileScreen">
     <div style="height:calc( 10vh - 15px );"></div>
     <div class="position-relative" style="z-index: 3" id="impact">
         <div class="redframe" id="redframe">
@@ -69,7 +69,7 @@
 
 
 
-<div class="mobile">
+<div class="mobile" *ngIf="data.ismobileScreen">
     <div style="height:calc( 10vh - 15px );"></div>
     <div  class="position-relative"
     style="background: black;z-index: 3;line-height: initial;

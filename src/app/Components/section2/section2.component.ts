@@ -1,4 +1,5 @@
 import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
+import {DataService} from '../../data.service';
 declare var $:any;
 @Component({
   selector: 'app-section2',
@@ -11,16 +12,22 @@ export class Section2Component implements OnInit {
   //@ts-ignore
   @ViewChild('rocketbvideo1') rocketbvideo1:ElementRef;
 
-  constructor() { }
+  constructor(public data:DataService) { }
 
   ngOnInit(): void {
   }
   ngAfterViewInit(){
-    this.rocketbvideo.nativeElement.muted = true 
-    this.rocketbvideo.nativeElement.play()
+    try{
+      this.rocketbvideo.nativeElement.muted = true 
+      this.rocketbvideo.nativeElement.play()
+    }catch(e){
+    }
+    try{
+      this.rocketbvideo1.nativeElement.muted = true 
+      this.rocketbvideo1.nativeElement.play()
+    }catch(e){
+    }
 
-    this.rocketbvideo1.nativeElement.muted = true 
-    this.rocketbvideo1.nativeElement.play()
     //@ts-ignore
     var parallaxController = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
