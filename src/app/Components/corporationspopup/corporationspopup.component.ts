@@ -10,6 +10,11 @@ export class CorporationspopupComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // window.addEventListener('keypress',(e)=>{
+    //   console.log(e)
+    // })
   }
-
+  // ngOnDestroy(){
+  //   console.log('destroy')
+  // }
 }

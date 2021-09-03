@@ -11,6 +11,7 @@ export class MenuComponent implements OnInit {
   items = ['Home','Clients','Startups','Corporations','Our Work','Incubr impact']
   ngOnInit(): void {
   }
+  
   navigate(item:any){
     if(item=='Home'){
       this.data.toggleMenu()

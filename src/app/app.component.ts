@@ -10,12 +10,18 @@ export class AppComponent {
   title = 'incubr';
   constructor (public data:DataService){}
   ngOnInit(){
+    window.addEventListener('keydown',this.toggleonEscape.bind(this))
+
     this.data.ismobileScreen = (window.innerWidth<=1100)
     window.onresize = ()=>{
       this.data.ismobileScreen = (window.innerWidth<=1100)
     }
   }
-
+  toggleonEscape(e:any){
+    if(e.code == 'Escape'){
+      this.data.toggleMenu()
+    }
+  }
 
   ngAfterViewInit(){
     $(document).ready(function(){
@@ -27,4 +33,8 @@ export class AppComponent {
           // Scrollbar.init(document.querySelector('#my-scrollbar'),{renderByPixels:true});
       });
   };
+
+  ngOnDestroy(){
+    window.removeEventListener('keydown',this.toggleonEscape.bind(this))
+  }
 }
